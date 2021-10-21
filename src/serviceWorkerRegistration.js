@@ -9,6 +9,8 @@
 
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://cra.link/PWA
+// eslint-disable-next-line no-unused-vars
+const swUrl = `${process.env.PUBLIC_URL}/sw.js`
 
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
