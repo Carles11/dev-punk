@@ -2,8 +2,9 @@ const dictionary = {
   es: {
     AVISO_LEGAL_CONTENT: 'Aviso legal',
     ABOUT_TITLE: 'Sobre nosotros',
-    DESCRIPTION: 'Programadores',
-    HEADER_MAIN: 'HEADER-MAIN-DUMMY',
+    DESCRIPTION: 'Programadores de software',
+    SUBDESCRIPTION: 'Encuentra tu programador en nuestras filas',
+    HEADER_MAIN: 'devPunk Developers',
     HEADER_TITLE: 'Dev-Punk Developers',
     MSG_SEND_ERROR:
       'Lamentablemente no se pudo enviar el formulario, inténtelo más tarde.',

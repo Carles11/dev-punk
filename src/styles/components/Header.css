@@ -1,16 +1,29 @@
 .header-sections {
   position: relative;
-  text-align: center;
-  color: black;
 }
-.header-titles {
+.header-titles img {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 11%;
+  left: 6%;
   transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
 }
-.header-background {
+
+.header-subtitles {
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
 }
 .app-header-bg {
   margin: 0;
+}
+.app-header-bg img {
+  height: auto;
+  width: 100%;
 }
