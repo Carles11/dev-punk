@@ -9,7 +9,7 @@ import ScrollToTop from './components/ScrollToTop'
 import reportWebVitals from './reportWebVitals'
 import serviceWorker from './service-worker.js'
 
-// TODO: (show a "This web app works offline!" message)
+// TODO: (showing a "This web app works offline!" message)
 ReactDOM.render(
   <React.StrictMode>
     <Router>

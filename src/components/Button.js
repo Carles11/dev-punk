@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
+import '../styles/components/Button.css'
 const Button = (props) => {
   const { link, label, type, external, css, fn, disabled } = props
 

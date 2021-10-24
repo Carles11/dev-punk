@@ -1,2 +1,11 @@
 /** GLOBAL VARIABLES **/
 @import './_variables.css';
+
+/** COMPONENT STYLES **/
+@import './styles/components/form/FormComponent.css';
+@import './styles/components/Background.css';
+@import './styles/components/Button.css';
+@import './styles/components/Footer.css';
+@import './styles/components/Header.css';
+@import './styles/components/scrollMeIcon.css';
+@import './styles/components/Navigation.css';
