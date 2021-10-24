@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
 
+import ScrollMeIcon from '../components/ScrollMeIcon'
+
 import Background from './Background'
 import bg from '../assets/imgs/bg-main.jpg'
 import logo from '../assets/logos/dev-punk-logo_w200.png'
@@ -15,9 +17,10 @@ const Header = (props) => {
         {/* <h1>{DIC.HEADER_MAIN}</h1> */}
         <img src={logo} alt={DIC && DIC.HEADER_MAIN} />
       </div>{' '}
-      <div className="header-subtitles">
+      {/* <div className="header-subtitles">
         <h3>{DIC && DIC.SUBDESCRIPTION}</h3>
-      </div>
+      </div> */}
+      <ScrollMeIcon />
       <Background
         css={'app-header-bg'}
         url={bg}
