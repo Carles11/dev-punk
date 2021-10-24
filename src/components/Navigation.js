@@ -41,19 +41,14 @@ class Navigation extends React.Component {
     const icon = visible ? 'close' : 'menu'
 
     const NAV = [
+      { label: '', children: [] },
+      { label: '', children: [] },
       {
-        label: DIC.NAV_INFO,
-        children: [
-          DIC.NAV_BASES,
-          DIC.NAV_TEXTOS,
-          DIC.NAV_CRITERIOS,
-          DIC.NAV_IMPRESOS,
-          DIC.NAV_COLEGIOS,
-          DIC.NAV_LATINOAMERICA,
-        ],
+        label: DIC.NAV_ABOUT,
+        link: '/about',
+        children: [],
       },
-      { label: DIC.NAV_INSCRIPCION, children: [] },
-      { label: DIC.NAV_GALERIA, children: [] },
+      { label: DIC.NAV_AVISO_LEGAL, children: [] },
     ]
 
     const List = (
@@ -67,7 +62,7 @@ class Navigation extends React.Component {
             <span className={`icon-x-circle`} />
           </button>
         </li>
-        <li className="app-nav-item logo">
+        {/* <li className="app-nav-item logo">
           <Link to="/">
             <img
               onClick={this.handleNavigation}
@@ -77,7 +72,7 @@ class Navigation extends React.Component {
               alt="Leo, leo"
             />
           </Link>
-        </li>
+        </li> */}
         {NAV.map((item, i) => {
           const label = item.label
           const children = item.children.length
@@ -111,25 +106,6 @@ class Navigation extends React.Component {
             </li>
           )
         })}
-
-        <li className="app-nav-mail">
-          <a
-            href="mailto:c.cid@hws.schule?subject=Concurso 'Leo, leo... ¿Qué lees?'"
-            className="icon-mail"
-            aria-label="Correo de contacto"
-          >
-            <span className="hidden">Contacto</span>
-          </a>
-        </li>
-
-        <li className="app-nav-item app-nav-item-responsive">
-          <a
-            href="mailto:c.cid@hws.schule?subject=Concurso 'Leo, leo... ¿Qué lees?'"
-            aria-label="Correo de contacto"
-          >
-            {'Contacto'.toUpperCase()}
-          </a>
-        </li>
       </ul>
     )
 

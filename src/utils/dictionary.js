@@ -10,9 +10,9 @@ const dictionary = {
       'Lamentablemente no se pudo enviar el formulario, inténtelo más tarde.',
     MORE_INFO: 'Más información',
     NAME: 'devPunk',
-    NAV_AVISO_LEGAL: 'Datenschutzerklärung',
+    NAV_AVISO_LEGAL: 'Aviso legal',
     NAV_INFO: 'Info de Navigation',
-    NAV_ABOUT: 'Sobre nosotros',
+    NAV_ABOUT: 'Qué hacemos?',
     NAV_HOME: 'Home',
     NOTFOUND: 'No se ha encontrado la página.',
     NOTFOUND_TXT:
