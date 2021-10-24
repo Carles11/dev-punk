@@ -1,0 +1,9 @@
+.app-background {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.app-background-render {
+  opacity: 1;
+}

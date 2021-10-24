@@ -1,6 +1,9 @@
+/* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom'
 
-const Navigation = () => {
+const Navigation = ({ DIC }) => {
+  console.log('navi-DICS', DIC)
+
   return (
     <div>
       <ul>

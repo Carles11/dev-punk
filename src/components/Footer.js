@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import Button from './Button'
 
+import '../styles/components/Footer.css'
+
 const Footer = (props) => {
   const { DIC, FOOTER_DATA } = props
 

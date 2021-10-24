@@ -1,0 +1,16 @@
+.header-sections {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.header-titles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-background {
+}
+.app-header-bg {
+  margin: 0;
+}
