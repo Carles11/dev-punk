@@ -13,15 +13,15 @@ const Header = (props) => {
     <header className="header-sections">
       <div className="header-titles">
         {/* <h1>{DIC.HEADER_MAIN}</h1> */}
-        <img src={logo} alt={DIC.HEADER_MAIN} />
+        <img src={logo} alt={DIC && DIC.HEADER_MAIN} />
       </div>{' '}
       <div className="header-subtitles">
-        <h3>{DIC.SUBDESCRIPTION}</h3>
+        <h3>{DIC && DIC.SUBDESCRIPTION}</h3>
       </div>
       <Background
         css={'app-header-bg'}
         url={bg}
-        label={`${DIC.HEADER_MAIN}, ${DIC.DESCRIPTION}`}
+        label={`${DIC && DIC.HEADER_MAIN}, ${DIC && DIC.DESCRIPTION}`}
       />
     </header>
   )

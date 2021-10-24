@@ -2,6 +2,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 
 import Header from '../components/Header'
+import ScrollMeIcon from '../components/ScrollMeIcon'
 import FormComponent from '../components/form/FormComponent'
 
 const Home = ({ DIC }) => {
@@ -15,6 +16,7 @@ const Home = ({ DIC }) => {
         ]}
       />
       <Header DIC={DIC} />
+      <ScrollMeIcon />
       <FormComponent DIC={DIC} />
     </>
   )
