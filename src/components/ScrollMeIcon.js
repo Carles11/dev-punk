@@ -3,12 +3,14 @@ import '../styles/components/scrollMeIcon.css'
 const ScrollMeIcon = () => {
   return (
     <span className="scroll-btn">
-      <a href="#">
-        <span className="mouse">
-          <span></span>
-        </span>
-      </a>
-      <p>scroll me</p>
+      <div className="scroll-flex">
+        <a href="#">
+          <span className="mouse">
+            <span></span>
+          </span>
+        </a>
+        <p>solicita un programador</p>
+      </div>
     </span>
   )
 }

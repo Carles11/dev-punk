@@ -20,6 +20,9 @@ const Header = (props) => {
       {/* <div className="header-subtitles">
         <h3>{DIC && DIC.SUBDESCRIPTION}</h3>
       </div> */}
+      <div className="header-copyrights">
+        <p>{DIC && DIC.HEADER_COPYRIGHTS}</p>
+      </div>
       <ScrollMeIcon />
       <Background
         css={'app-header-bg'}

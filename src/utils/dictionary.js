@@ -6,6 +6,7 @@ const dictionary = {
     SUBDESCRIPTION: 'Encuentra tu programador en nuestras filas',
     HEADER_MAIN: 'devPunk Developers',
     HEADER_TITLE: 'Dev-Punk Developers',
+    HEADER_COPYRIGHTS: 'Foto von Anna Tarazevich von Pexels',
     MSG_SEND_ERROR:
       'Lamentablemente no se pudo enviar el formulario, inténtelo más tarde.',
     MORE_INFO: 'Más información',

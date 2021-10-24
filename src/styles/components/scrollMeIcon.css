@@ -55,6 +55,10 @@ p {
     top: 29%;
   }
 }
+.scroll-flex {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .scroll-btn {
   display: block;
   position: absolute;
@@ -70,7 +74,8 @@ p {
   font-weight: normal;
   color: #7f8c8d;
   color: #ffffff;
-  font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Cantarell', 'proxima-nova', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
   letter-spacing: 2px;
 }
 .scroll-btn > *:hover,

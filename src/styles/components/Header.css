@@ -20,6 +20,14 @@
   font-size: 24px;
   font-weight: bold;
 }
+.header-copyrights {
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+}
 .app-header-bg {
   margin: 0;
 }

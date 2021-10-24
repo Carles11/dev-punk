@@ -42,17 +42,17 @@ const Footer = (props) => {
           </li>
         </ul>
         <section className="app-footer-imgs">
-          <h3>{DIC.SPONSORING_TITLE}</h3>
+          {/* <h3>{DIC.SPONSORING_TITLE}</h3>
           <article>
-            {/* <a
+            <a
               href="https://kultusministerium.hessen.de/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Enlace a la página web del Ministerio de cultura de Hessen"
             >
               <img src={logoHessen} alt="Hessen" />
-            </a> */}
-          </article>
+            </a> 
+          </article> */}
         </section>
       </div>
     </footer>
