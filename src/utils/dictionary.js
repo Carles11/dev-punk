@@ -11,8 +11,9 @@ const dictionary = {
     MORE_INFO: 'Más información',
     NAME: 'devPunk',
     NAV_AVISO_LEGAL: 'Aviso legal',
-    NAV_INFO: 'Info de Navigation',
-    NAV_ABOUT: 'Qué hacemos?',
+    NAV_FIND_DEV: 'Encuentra un programador',
+    NAV_ABOUT: 'Sobre nosotros',
+    NAV_HOW: 'Cómo lo hacemos?',
     NAV_HOME: 'Home',
     NOTFOUND: 'No se ha encontrado la página.',
     NOTFOUND_TXT:

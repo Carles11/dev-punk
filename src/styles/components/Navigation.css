@@ -40,9 +40,10 @@
   display: block;
   width: 100%;
   background: var(--menuBg);
-  color: var(--textColor);
+  /* color: var(--textColor); */
+  color: white;
   font-family: Regular;
-  font-size: var(--textSize);
+  font-size: 17px;
   text-align: center;
   text-decoration: none;
   padding: 1.7rem 1rem;
@@ -117,7 +118,8 @@
 }
 
 .app-nav-mail > a:hover {
-  color: var(--textColor);
+  /* color: var(--textColor); */
+  color: black;
 }
 
 .app-nav-mail > a > span {
@@ -144,7 +146,7 @@
 
 .app-nav-item > a:hover,
 .app-subnav-item > a:hover {
-  background: white;
+  background: darkblue;
 }
 
 .app-subnav-list {
@@ -175,7 +177,8 @@
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-  color: var(--textColor);
+  /* color: var(--textColor); */
+  color: black;
   z-index: 1;
   transition-property: background color;
   transition-duration: 0.5s;
@@ -237,7 +240,8 @@
   .app-nav-item > a,
   .app-nav-item > button {
     background: var(--menuBg);
-    color: var(--textColor);
+    /* color: var(--textColor); */
+    color: black;
     font-size: var(--textSize);
     padding: 1.25rem 2rem;
     border-bottom: 1px solid #eeeeee;
@@ -293,7 +297,8 @@
 
   .app-nav-item > button > span,
   .btn-menu > span {
-    color: var(--secondColor);
+    /* color: var(--secondColor); */
+    color: black;
     background: transparent;
   }
 
@@ -306,7 +311,8 @@
   .app-nav-item > a:hover,
   .app-subnav-item > a:hover {
     background: white;
-    color: var(--textColor);
+    /* color: var(--textColor); */
+    color: black;
   }
 
   .app-subnav-list,
@@ -317,7 +323,8 @@
     top: 0;
   }
   .app-subnav-item > a {
-    color: var(--textColor);
+    /* color: var(--textColor); */
+    color: black;
     border-bottom: 1px solid #eeeeee;
     text-align: left;
     padding: 0.65rem 2rem;

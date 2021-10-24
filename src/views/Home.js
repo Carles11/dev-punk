@@ -2,6 +2,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 
 import Header from '../components/Header'
+import FormComponent from '../components/form/FormComponent'
 
 const Home = ({ DIC }) => {
   return (
@@ -14,6 +15,7 @@ const Home = ({ DIC }) => {
         ]}
       />
       <Header DIC={DIC} />
+      <FormComponent DIC={DIC} />
     </>
   )
 }

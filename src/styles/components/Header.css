@@ -13,8 +13,8 @@
 
 .header-subtitles {
   position: absolute;
-  bottom: 0%;
-  right: 0;
+  bottom: 0;
+  right: -10%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 24px;

@@ -42,13 +42,13 @@ class Navigation extends React.Component {
 
     const NAV = [
       { label: '', children: [] },
-      { label: '', children: [] },
+      { label: DIC.NAV_FIND_DEV, link: '/find-form', children: [] },
       {
         label: DIC.NAV_ABOUT,
         link: '/about',
         children: [],
       },
-      { label: DIC.NAV_AVISO_LEGAL, children: [] },
+      { label: DIC.NAV_AVISO_LEGAL, link: '/aviso-legal', children: [] },
     ]
 
     const List = (
@@ -83,7 +83,7 @@ class Navigation extends React.Component {
             <li key={label} className="app-nav-item">
               <Link
                 className={iconDown}
-                to="/"
+                to={item.link}
                 onClick={this.handleNavigation}
                 name={section}
               >
