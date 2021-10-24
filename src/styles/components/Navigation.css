@@ -145,7 +145,7 @@
 
 .app-nav-item > a:hover,
 .app-subnav-item > a:hover {
-  background: darkblue;
+  background: #001f3f;
 }
 
 .app-subnav-list {
