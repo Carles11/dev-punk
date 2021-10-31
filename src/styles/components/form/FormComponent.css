@@ -1,5 +1,7 @@
-.form {
+.steps-form {
   height: auto;
+  color: white;
+  margin: 6rem;
 }
 .form-header {
   margin: 0 !important;

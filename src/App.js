@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import Navigation from './components/Navigation'
 
 const DIC = getDictionary()
+import './App.css'
 
 const App = (props) => (
   <React.Fragment>
