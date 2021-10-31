@@ -6,14 +6,14 @@ const Step3 = (props) => {
   }
   const { DIC } = props
   return (
-    <div className="form-group">
-      <label htmlFor="message">Email address</label>
+    <div className="question">
+      <label htmlFor="message">{DIC.FORM_MESSAGE}</label>
       <input
         className="form-control"
         id="message"
         name="message"
         type="text"
-        placeholder={DIC.FORM_MESSAGE}
+        placeholder={DIC.FORM_MESSAGE_PH}
         value={props.message}
         onChange={props.handleChange}
       />

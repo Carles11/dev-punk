@@ -10,11 +10,11 @@ const Step1 = (props) => {
       <div className="question">
         <label htmlFor="firstName">{DIC.FORM_NAME}</label>
         <input
-          className="form-control"
+          className=""
           id="firstName"
           name="firstName"
           type="text"
-          placeholder={DIC.FORM_NAME}
+          placeholder={DIC.FORM_NAME_PH}
           value={props.firstName}
           onChange={props.handleChange}
         />
@@ -22,11 +22,11 @@ const Step1 = (props) => {
       <div className="question">
         <label htmlFor="firm">{DIC.FORM_FIRM}</label>
         <input
-          className="form-control"
+          className=""
           id="firm"
           name="firm"
           type="text"
-          placeholder={DIC.FORM_FIRM}
+          placeholder={DIC.FORM_FIRM_PH}
           value={props.firm}
           onChange={props.handleChange}
         />

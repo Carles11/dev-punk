@@ -6,28 +6,32 @@ const Step2 = (props) => {
   }
   const { DIC } = props
   return (
-    <div className="form-group">
-      <label htmlFor="email">Nombre</label>
-      <input
-        className="form-control"
-        id="email"
-        name="email"
-        type="text"
-        placeholder={DIC.FORM_EMAIL}
-        value={props.email}
-        onChange={props.handleChange}
-      />
-      <label htmlFor="secondName">Nombre</label>
-      <input
-        className="form-control"
-        id="secondName"
-        name="secondName"
-        type="text"
-        placeholder={DIC.FORM_PHONE}
-        value={props.phone}
-        onChange={props.handleChange}
-      />
-    </div>
+    <>
+      <div className="question">
+        <label htmlFor="email">{DIC.FORM_EMAIL}</label>
+        <input
+          className="form-control"
+          id="email"
+          name="email"
+          type="text"
+          placeholder={DIC.FORM_EMAIL_PH}
+          value={props.email}
+          onChange={props.handleChange}
+        />
+      </div>
+      <div className="question">
+        <label htmlFor="secondName">{DIC.FORM_PHONE}</label>
+        <input
+          className="form-control"
+          id="secondName"
+          name="secondName"
+          type="text"
+          placeholder={DIC.FORM_PHONE_PH}
+          value={props.phone}
+          onChange={props.handleChange}
+        />
+      </div>
+    </>
   )
 }
 

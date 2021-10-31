@@ -52,12 +52,13 @@ class FormComponent extends Component {
   }
 
   previousButton() {
+    const { DIC } = this.props
     let currentStep = this.state.currentStep
     if (currentStep !== 1) {
       return (
         <Button
-          css="btn btn-invert"
-          label="Previous"
+          css="btn-invert"
+          label={DIC.BUTTON_PREVIOUS}
           type="button"
           fn={this._prev}
         />
@@ -67,12 +68,13 @@ class FormComponent extends Component {
   }
 
   nextButton() {
+    const { DIC } = this.props
     let currentStep = this.state.currentStep
     if (currentStep < 3) {
       return (
         <Button
-          css="btn btn-invert"
-          label="Next"
+          css="btn-invert btn-margin-left"
+          label={DIC.BUTTON_NEXT}
           type="button"
           fn={this._next}
         />
