@@ -34,14 +34,22 @@
   overflow: visible;
 }
 
+.app-nav-item:nth-child(2) {
+  visibility: hidden;
+  cursor: none;
+}
+.app-nav-item:nth-child(2):hover {
+  visibility: hidden;
+  cursor: none;
+}
 .app-nav-item > a,
 .app-nav-item > button {
   position: relative;
   display: block;
   width: 100%;
   background: var(--menuBg);
-  /* color: var(--textColor); */
-  color: white;
+  color: var(--navTextColor);
+
   font-size: 17px;
   text-align: center;
   text-decoration: none;

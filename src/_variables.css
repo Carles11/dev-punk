@@ -1,11 +1,12 @@
 :root {
   --textColor: #333333;
+  --navTextColor: #e2dfdf;
   --bgColor: #001f3f;
   --mainColor: #612559;
   --mainColorDark: #40173a;
   --secondColor: #6caa85;
   --errorColor: #ff3366;
-  --menuBg: #f4f7f6;
+  --menuBg: transparent;
   --titleSize: 3.5rem;
   --hugeSize: 2.5rem;
   --maxSize: 1.75rem;
