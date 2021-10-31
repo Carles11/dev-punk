@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import PropTypes from 'prop-types'
 
 import Button from '../Button.js'
 import Step1 from './steps/Step1'
@@ -12,9 +13,11 @@ class FormComponent extends Component {
     super(props)
     this.state = {
       currentStep: 1,
+      firstName: '',
+      firm: '',
+      message: '',
       email: '',
-      username: '',
-      password: '',
+      phone: null,
     }
   }
 
@@ -27,11 +30,8 @@ class FormComponent extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    const { email, username, password } = this.state
-    alert(`Your registration detail: \n 
-           Email: ${email} \n 
-           Username: ${username} \n
-           Password: ${password}`)
+    const { email, firstName, password } = this.state
+    console.log('handleSubmitted', email, firstName, password)
   }
 
   _next = () => {
@@ -48,11 +48,9 @@ class FormComponent extends Component {
     this.setState({
       currentStep: currentStep,
     })
+    console.log('PREPREPRVEEVEVEVEE', currentStep)
   }
 
-  /*
-   * the functions for our button
-   */
   previousButton() {
     let currentStep = this.state.currentStep
     if (currentStep !== 1) {
@@ -73,41 +71,51 @@ class FormComponent extends Component {
     if (currentStep < 3) {
       return (
         <Button
-          className="btn btn-primary float-right"
+          css="btn btn-invert"
+          label="Next"
           type="button"
-          onClick={this._next}
-        >
-          Next
-        </Button>
+          fn={this._next}
+        />
       )
     }
     return null
   }
 
   render() {
+    const { email, firstName, firm, currentStep, message, phone } = this.state
+    const { DIC } = this.props
     return (
       <div className="steps-form">
-        <h1>Rellena este formulario y te contactaremos en 4 horas.</h1>
-        <p>Step {this.state.currentStep} </p>
-
+        <div className="form-header">
+          <h1>Rellena este formulario y te contactaremos en 24 horas.</h1>
+          <p>
+            {' '}
+            {DIC.FORM_STEP}: {currentStep} / 3{' '}
+          </p>
+        </div>
         <form onSubmit={this.handleSubmit}>
           {/* 
         render the form steps and pass required props in
       */}
           <Step1
-            currentStep={this.state.currentStep}
+            currentStep={currentStep}
             handleChange={this.handleChange}
-            email={this.state.email}
+            firstName={firstName}
+            firm={firm}
+            DIC={DIC}
           />
           <Step2
-            currentStep={this.state.currentStep}
+            currentStep={currentStep}
             handleChange={this.handleChange}
-            username={this.state.username}
+            email={email}
+            phone={phone}
+            DIC={DIC}
           />
           <Step3
-            currentStep={this.state.currentStep}
+            currentStep={currentStep}
             handleChange={this.handleChange}
-            password={this.state.password}
+            message={message}
+            DIC={DIC}
           />
           {this.previousButton()}
           {this.nextButton()}
@@ -115,6 +123,10 @@ class FormComponent extends Component {
       </div>
     )
   }
+}
+
+FormComponent.propTypes = {
+  DIC: PropTypes.object,
 }
 
 export default FormComponent

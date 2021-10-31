@@ -4,16 +4,17 @@ const Step3 = (props) => {
   if (props.currentStep !== 3) {
     return null
   }
+  const { DIC } = props
   return (
     <div className="form-group">
-      <label htmlFor="email">Email address</label>
+      <label htmlFor="message">Email address</label>
       <input
         className="form-control"
-        id="email"
-        name="email"
+        id="message"
+        name="message"
         type="text"
-        placeholder="Enter email"
-        value={props.email}
+        placeholder={DIC.FORM_MESSAGE}
+        value={props.message}
         onChange={props.handleChange}
       />
     </div>
@@ -22,8 +23,9 @@ const Step3 = (props) => {
 
 Step3.propTypes = {
   currentStep: PropTypes.number,
-  email: PropTypes.string,
+  message: PropTypes.string,
   handleChange: PropTypes.func.isRequired,
+  DIC: PropTypes.object,
 }
 
 export default Step3

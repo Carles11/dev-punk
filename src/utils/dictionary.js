@@ -3,7 +3,12 @@ const dictionary = {
     AVISO_LEGAL_CONTENT: 'Aviso legal',
     ABOUT_TITLE: 'Sobre nosotros',
     DESCRIPTION: 'Programadores de software',
-    SUBDESCRIPTION: 'Encuentra tu programador en nuestras filas',
+    FORM_NAME: 'Nombre',
+    FORM_FIRM: 'Empresa',
+    FORM_MESSAGE: 'Deja tu mensaje',
+    FORM_PHONE: 'Teléfono',
+    FORM_EMAIL: 'Email',
+    FORM_STEP: 'Paso',
     HEADER_MAIN: 'devPunk Developers',
     HEADER_TITLE: 'Dev-Punk Developers',
     HEADER_COPYRIGHTS: 'Foto von Anna Tarazevich von Pexels',
@@ -20,6 +25,7 @@ const dictionary = {
     NOTFOUND_TXT:
       'Lo sentimos, pero probablemente el link que ha seguido está roto o se ha eliminado la página.',
     SPONSORING_TITLE: 'Cooperación y patrocinio: ',
+    SUBDESCRIPTION: 'Encuentra tu programador en nuestras filas',
   },
 }
 
