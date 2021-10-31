@@ -55,7 +55,7 @@ class Navigation extends React.Component {
       <ul className={`app-nav-list ${icon}`}>
         <li className="app-nav-item btn-close">
           <Link onClick={this.handleNavigation} to="/" name={'app-landing'}>
-            <img name={'app-landing'} src={Logo} alt="Leo, leo" />
+            <img name={'app-landing'} src={Logo} alt="devPunk Logo" />
           </Link>
           <button onClick={this.handleVisibility}>
             <span className="txt">CERRAR</span>

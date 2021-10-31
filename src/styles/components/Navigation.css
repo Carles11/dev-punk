@@ -153,7 +153,7 @@
 
 .app-nav-item > a:hover,
 .app-subnav-item > a:hover {
-  background: #001f3f;
+  background: var(--secondColor);
 }
 
 .app-subnav-list {

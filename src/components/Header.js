@@ -13,9 +13,13 @@ const Header = (props) => {
 
   return (
     <header className="header-sections">
-      <div className="header-titles">
+      <div className="header-logo ">
         {/* <h1>{DIC.HEADER_MAIN}</h1> */}
-        <img src={logo} alt={DIC && DIC.HEADER_MAIN} />
+        <img
+          className="flicker-in-glow"
+          src={logo}
+          alt={DIC && DIC.HEADER_MAIN}
+        />
       </div>{' '}
       {/* <div className="header-subtitles">
         <h3>{DIC && DIC.SUBDESCRIPTION}</h3>
