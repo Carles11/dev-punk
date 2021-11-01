@@ -5,6 +5,7 @@ import Button from '../Button.js'
 import Step1 from './steps/Step1'
 import Step2 from './steps/Step2'
 import Step3 from './steps/Step3'
+import Step4 from './steps/Step4'
 
 import '../../styles/components/form/FormComponent.css'
 
@@ -18,6 +19,9 @@ class FormComponent extends Component {
       message: '',
       email: '',
       phone: null,
+      developers: 0,
+      languages: '',
+      technologies: '',
     }
   }
 
@@ -36,7 +40,7 @@ class FormComponent extends Component {
 
   _next = () => {
     let currentStep = this.state.currentStep
-    currentStep = currentStep >= 2 ? 3 : currentStep + 1
+    currentStep = currentStep >= 3 ? 4 : currentStep + 1
     this.setState({
       currentStep: currentStep,
     })
@@ -70,7 +74,7 @@ class FormComponent extends Component {
   nextButton() {
     const { DIC } = this.props
     let currentStep = this.state.currentStep
-    if (currentStep < 3) {
+    if (currentStep < 4) {
       return (
         <Button
           css="btn-invert btn-margin-left"
@@ -84,7 +88,17 @@ class FormComponent extends Component {
   }
 
   render() {
-    const { email, firstName, firm, currentStep, message, phone } = this.state
+    const {
+      email,
+      firstName,
+      firm,
+      currentStep,
+      message,
+      phone,
+      developers,
+      languages,
+      technologies,
+    } = this.state
     const { DIC } = this.props
     return (
       <div id="find-form" className="steps-form">
@@ -114,6 +128,14 @@ class FormComponent extends Component {
             DIC={DIC}
           />
           <Step3
+            currentStep={currentStep}
+            handleChange={this.handleChange}
+            develoopers={developers}
+            languages={languages}
+            technologies={technologies}
+            DIC={DIC}
+          />
+          <Step4
             currentStep={currentStep}
             handleChange={this.handleChange}
             message={message}
