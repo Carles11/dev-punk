@@ -12,7 +12,31 @@ class Navigation extends React.Component {
     this.state = {
       visible: false,
       redirectTo: '',
+      prevScrollpos: window.pageYOffset,
+      visibleNav: true,
     }
+  }
+  // Adds an event listener when the component is mount.
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  // Remove the event listener when the component is unmount.
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
+  // Hide or show the menu.
+  handleScroll = () => {
+    const { prevScrollpos } = this.state
+
+    const currentScrollPos = window.pageYOffset
+    const visibleNav = prevScrollpos > currentScrollPos
+    console.log('visibleNav', visibleNav)
+    this.setState({
+      prevScrollpos: currentScrollPos,
+      visibleNav,
+    })
   }
 
   handleVisibility = () => {
@@ -37,8 +61,9 @@ class Navigation extends React.Component {
 
   render() {
     const { DIC } = this.props
-    const { visible } = this.state
+    const { visible, visibleNav } = this.state
     const icon = visible ? 'close' : 'menu'
+    const navbarHidden = visibleNav ? '' : 'navbar--hidden'
 
     const NAV = [
       { label: '', children: [] },
@@ -131,7 +156,7 @@ class Navigation extends React.Component {
     )
 
     return (
-      <nav className={`app-nav ${icon}`}>
+      <nav className={`app-nav navbar ${navbarHidden} ${icon}`}>
         {!visible && ResponsiveMenu}
         {List}
         <div className={`app-menu-bg ${icon}`} />
