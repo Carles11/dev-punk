@@ -87,7 +87,7 @@ class FormComponent extends Component {
     const { email, firstName, firm, currentStep, message, phone } = this.state
     const { DIC } = this.props
     return (
-      <div className="steps-form">
+      <div id="find-form" className="steps-form">
         <div className="form-header">
           <h1>Rellena este formulario y te contactaremos en 24 horas.</h1>
           <p>

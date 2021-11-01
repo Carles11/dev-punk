@@ -42,7 +42,7 @@ class Navigation extends React.Component {
 
     const NAV = [
       { label: '', children: [] },
-      { label: DIC.NAV_FIND_DEV, link: '/find-form', children: [] },
+      { label: DIC.NAV_FIND_DEV, href: '/#find-form', children: [] },
       {
         label: DIC.NAV_ABOUT,
         link: '/about',
@@ -81,14 +81,18 @@ class Navigation extends React.Component {
 
           return (
             <li key={label} className="app-nav-item">
-              <Link
-                className={iconDown}
-                to={item.link}
-                onClick={this.handleNavigation}
-                name={section}
-              >
-                {item?.label?.toUpperCase()}
-              </Link>
+              {item.link ? (
+                <Link
+                  className={iconDown}
+                  to={item.link}
+                  onClick={this.handleNavigation}
+                  name={section}
+                >
+                  {item?.label?.toUpperCase()}
+                </Link>
+              ) : (
+                <a href={item.href}> {item?.label?.toUpperCase()}</a>
+              )}
               {!!children && (
                 <ul className={`app-subnav-list`}>
                   {item.children?.map((item) => {
