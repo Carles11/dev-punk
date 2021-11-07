@@ -4,6 +4,7 @@ const dictionary = {
     ABOUT_TITLE: 'Sobre nosotros',
     BUTTON_NEXT: 'Siguiente',
     BUTTON_PREVIOUS: 'Anterior',
+    BUTTON_SUBMIT: 'Enviar',
     DESCRIPTION: 'Programadores de software',
     FORM_DEVELOPERS: 'Cuántos programadores precisas?',
     FORM_DEVELOPERS_PH: 'Número de programadores',

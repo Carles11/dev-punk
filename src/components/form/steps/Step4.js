@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+// import Button from '../../Button.js'
 
 const Step4 = (props) => {
   if (props.currentStep !== 4) {
@@ -25,6 +26,7 @@ Step4.propTypes = {
   currentStep: PropTypes.number,
   message: PropTypes.string,
   handleChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
   DIC: PropTypes.object,
 }
 

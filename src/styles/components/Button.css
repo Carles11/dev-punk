@@ -118,3 +118,11 @@
 .btn-margin-left {
   margin-left: 1rem;
 }
+
+.btn-last-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.btn-submit {
+}

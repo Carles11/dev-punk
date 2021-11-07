@@ -5,6 +5,9 @@ import Header from '../components/Header'
 import FormComponent from '../components/form/FormComponent'
 
 const Home = ({ DIC }) => {
+  const handleSubmit = (data) => {
+    console.log('DATA', data)
+  }
   return (
     <>
       <Helmet
@@ -15,7 +18,7 @@ const Home = ({ DIC }) => {
         ]}
       />
       <Header DIC={DIC} />
-      <FormComponent DIC={DIC} />
+      <FormComponent DIC={DIC} handleSubmit={handleSubmit} />
     </>
   )
 }
