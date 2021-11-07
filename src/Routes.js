@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import Home from './views/Home'
 import About from './views/About'
+import Legal from './views/Legal'
 
 const Routes = ({ DIC }) => {
   return (
@@ -13,8 +14,12 @@ const Routes = ({ DIC }) => {
         component={(props) => <Home props={props} DIC={DIC} />}
       />
       <Route
-        path="/about-us"
-        component={(props, { DIC }) => <About props={props} DIC={DIC} />}
+        path="/about"
+        component={(props) => <About props={props} DIC={DIC} />}
+      />
+      <Route
+        path="/aviso-legal"
+        component={(props) => <Legal props={props} DIC={DIC} />}
       />
     </Switch>
   )

@@ -9,8 +9,7 @@ import FormComponent from '../components/form/FormComponent'
 const Home = ({ DIC }) => {
   const handleSubmit = (data, e) => {
     e.preventDefault()
-    const dataToApi = { ...data }
-    console.log('DATADDD', dataToApi)
+
     const showName = data.firstName.split(' ')[0]
     Swal.fire({
       title: `Gracias, ${showName}!`,
@@ -20,7 +19,6 @@ const Home = ({ DIC }) => {
       showCancelButton: true,
       cancelButtonText: 'Cierra',
     })
-    window.scrollTo(0, 0)
   }
 
   return (

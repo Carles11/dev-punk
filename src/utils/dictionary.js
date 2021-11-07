@@ -1,6 +1,6 @@
 const dictionary = {
   es: {
-    AVISO_LEGAL_CONTENT: 'Aviso legal',
+    AVISO_LEGAL_TITLE: 'Aviso legal',
     ABOUT_TITLE: 'Sobre nosotros',
     BUTTON_NEXT: 'Siguiente',
     BUTTON_PREVIOUS: 'Anterior',

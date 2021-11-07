@@ -1,5 +1,6 @@
 .app-footer {
   position: relative;
+  width: 100%;
   background: var(--mainColorDark);
   color: white;
   bottom: 0;

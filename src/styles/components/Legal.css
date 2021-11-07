@@ -1,0 +1,10 @@
+.legal-section {
+  height: 100vh;
+  margin-top: -2rem;
+}
+
+.legal-section h2 {
+  color: white;
+  padding-top: 11rem;
+  margin-left: 5%;
+}
