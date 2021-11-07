@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 
@@ -5,8 +7,11 @@ import Header from '../components/Header'
 import FormComponent from '../components/form/FormComponent'
 
 const Home = ({ DIC }) => {
-  const handleSubmit = (data) => {
-    console.log('DATA', data)
+  const [showSent, setShowSent] = useState(false)
+  const handleSubmit = (data, e) => {
+    e.preventDefault()
+    console.log('DATADDD', data)
+    setShowSent(true)
   }
   return (
     <>
@@ -18,6 +23,7 @@ const Home = ({ DIC }) => {
         ]}
       />
       <Header DIC={DIC} />
+      {showSent && 'SENT'}
       <FormComponent DIC={DIC} handleSubmit={handleSubmit} />
     </>
   )

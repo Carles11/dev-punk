@@ -26,6 +26,7 @@ class FormComponent extends Component {
   }
 
   handleChange = (event) => {
+    event.preventDefault()
     const { name, value } = event.target
     this.setState({
       [name]: value,
@@ -66,6 +67,7 @@ class FormComponent extends Component {
 
   nextButton() {
     const { DIC } = this.props
+
     let currentStep = this.state.currentStep
     if (currentStep < 4) {
       return (
@@ -80,44 +82,74 @@ class FormComponent extends Component {
     return null
   }
   submitButton() {
-    const { DIC, handleSubmit } = this.props
+    const { DIC } = this.props
+
     let currentStep = this.state.currentStep
     if (currentStep === 4) {
       return (
         <Button
           css="btn-invert btn-submit"
           label={DIC.BUTTON_SUBMIT}
-          type="button"
-          fn={handleSubmit}
+          type="submit"
         />
       )
     }
     return null
   }
 
-  render() {
+  submitData = (e) => {
+    const { handleSubmit } = this.props
     const {
-      email,
       firstName,
       firm,
-      currentStep,
       message,
+      email,
       phone,
       developers,
       languages,
       technologies,
     } = this.state
-    const { DIC, handleSubmit } = this.props
+
+    const data = {
+      firstName,
+      firm,
+      message,
+      email,
+      phone,
+      developers,
+      languages,
+      technologies,
+    }
+    handleSubmit(data, e)
+  }
+
+  render() {
+    const { DIC } = this.props
+    const {
+      currentStep,
+      firstName,
+      firm,
+      message,
+      email,
+      phone,
+      developers,
+      languages,
+      technologies,
+    } = this.state
     return (
       <div id="find-form" className="steps-form">
         <div className="form-header">
           <h1>Rellena este formulario y te contactaremos en 24 horas.</h1>
           <p>
             {' '}
-            {DIC.FORM_STEP}: {currentStep} / 3{' '}
+            {DIC.FORM_STEP}: {currentStep} / 4{' '}
           </p>
         </div>
-        <form onSubmit={handleSubmit}>
+        <form
+          onSubmit={(e) => {
+            this.submitData(e)
+          }}
+        >
           {/* 
         render the form steps and pass required props in
       */}
@@ -148,7 +180,6 @@ class FormComponent extends Component {
             handleChange={this.handleChange}
             message={message}
             DIC={DIC}
-            handleSubmit={handleSubmit}
           />
           <div className="btn-last-flex">
             {this.previousButton()}

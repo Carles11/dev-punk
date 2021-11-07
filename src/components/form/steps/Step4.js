@@ -26,7 +26,6 @@ Step4.propTypes = {
   currentStep: PropTypes.number,
   message: PropTypes.string,
   handleChange: PropTypes.func.isRequired,
-  handleSubmit: PropTypes.func.isRequired,
   DIC: PropTypes.object,
 }
 

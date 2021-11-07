@@ -32,7 +32,6 @@ class Navigation extends React.Component {
 
     const currentScrollPos = window.pageYOffset
     const visibleNav = prevScrollpos > currentScrollPos
-    console.log('visibleNav', visibleNav)
     this.setState({
       prevScrollpos: currentScrollPos,
       visibleNav,
