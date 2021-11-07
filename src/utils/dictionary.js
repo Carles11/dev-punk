@@ -2,6 +2,7 @@ const dictionary = {
   es: {
     AVISO_LEGAL_TITLE: 'Aviso legal',
     ABOUT_TITLE: 'Sobre nosotros',
+    ABOUT_DESCRIPTION: 'DevPunk somos blablbalblablablablabl....',
     BUTTON_NEXT: 'Siguiente',
     BUTTON_PREVIOUS: 'Anterior',
     BUTTON_SUBMIT: 'Enviar',

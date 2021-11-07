@@ -6,6 +6,7 @@ const About = ({ DIC }) => {
   return (
     <div className="about-section">
       <h2>{DIC.ABOUT_TITLE}</h2>
+      <p>{DIC.ABOUT_DESCRIPTION}</p>
     </div>
   )
 }
