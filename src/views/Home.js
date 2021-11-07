@@ -9,9 +9,11 @@ import FormComponent from '../components/form/FormComponent'
 const Home = ({ DIC }) => {
   const handleSubmit = (data, e) => {
     e.preventDefault()
-    console.log('DATADDD', data)
+    const dataToApi = { ...data }
+    console.log('DATADDD', dataToApi)
+    const showName = data.firstName.split(' ')[0]
     Swal.fire({
-      title: `Gracias, ${data.firstName}!`,
+      title: `Gracias, ${showName}!`,
       text: 'Tu petición ha sido enviada. En breve nos pondremos en contacto contigo.',
       icon: 'success',
       showConfirmButton: false,
