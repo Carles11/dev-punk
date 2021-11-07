@@ -1,18 +1,26 @@
-import { useState } from 'react'
+import PropTypes from 'prop-types'
 
 import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
+import Swal from 'sweetalert2'
 
 import Header from '../components/Header'
 import FormComponent from '../components/form/FormComponent'
 
 const Home = ({ DIC }) => {
-  const [showSent, setShowSent] = useState(false)
   const handleSubmit = (data, e) => {
     e.preventDefault()
     console.log('DATADDD', data)
-    setShowSent(true)
+    Swal.fire({
+      title: `Gracias, ${data.firstName}!`,
+      text: 'Tu petición ha sido enviada. En breve nos pondremos en contacto contigo.',
+      icon: 'success',
+      showConfirmButton: false,
+      showCancelButton: true,
+      cancelButtonText: 'Cierra',
+    })
+    window.scrollTo(0, 0)
   }
+
   return (
     <>
       <Helmet
@@ -23,7 +31,7 @@ const Home = ({ DIC }) => {
         ]}
       />
       <Header DIC={DIC} />
-      {showSent && 'SENT'}
+
       <FormComponent DIC={DIC} handleSubmit={handleSubmit} />
     </>
   )
