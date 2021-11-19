@@ -17,12 +17,12 @@ class Background extends React.PureComponent {
 
   render() {
     const { css, label, url } = this.props
-    const render = this.state.render
-      ? 'app-background-render bottom-right-effect'
-      : ''
+    const render = this.state.render ? 'app-background-render' : ''
 
     return (
-      <figure className={`app-background ${css} ${render}`}>
+      <figure
+        className={`app-background  bottom-right-effect ${css} ${render}`}
+      >
         <img src={url} alt={label} />
       </figure>
     )

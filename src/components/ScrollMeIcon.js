@@ -9,7 +9,7 @@ const ScrollMeIcon = () => {
             <span></span>
           </span>
         </a>
-        <p>Descubre más</p>
+        <p>Descúbrenos</p>
       </div>
     </span>
   )
