@@ -20,10 +20,8 @@ class Background extends React.PureComponent {
     const render = this.state.render ? 'app-background-render' : ''
 
     return (
-      <figure
-        className={`app-background  bottom-right-effect ${css} ${render}`}
-      >
-        <img src={url} alt={label} />
+      <figure className={`app-background   ${css} ${render}`}>
+        <img className="bottom-right-effect" src={url} alt={label} />
       </figure>
     )
   }

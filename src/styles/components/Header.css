@@ -27,13 +27,14 @@
   position: absolute;
   z-index: 1;
   bottom: 0;
-  right: -10%;
+  right: 0%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 14px;
 }
 .app-header-bg {
   margin: 0;
+  overflow: hidden;
 }
 .app-header-bg img {
   height: 100vh;
