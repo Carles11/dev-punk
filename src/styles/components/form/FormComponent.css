@@ -1,14 +1,19 @@
 .steps-form {
   height: auto;
-  color: white;
   margin: 6rem;
 }
 .form-header {
   margin: 0 !important;
 }
+
 .form-header h1 p {
-  color: #f4f7f6;
+  color: var(--textColor);
   padding: 2rem;
+  font-weight: 100;
+}
+.form-header p {
+  position: absolute;
+  right: 10%;
 }
 
 form {
@@ -119,9 +124,6 @@ input[type='number']:focus {
   background: var(--secondColor);
   color: white;
   margin-top: 30px;
-}
-form .question input[type='text']:valid,
-input[type='number']:valid {
 }
 
 form .question input[type='text']:focus ~ label,

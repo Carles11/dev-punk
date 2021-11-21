@@ -3,16 +3,15 @@ html {
 }
 
 body {
-  background-color: #001f3f;
-  margin-left: 5%;
+  background-color: var(--bgColorLight);
   font-family: 'Cantarell', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  font-size: 5rem;
-  text-transform: capitalize;
+  font-size: 2rem;
+  text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -21,10 +20,6 @@ h2 {
   text-transform: capitalize;
   text-align: center;
   letter-spacing: 1.5px;
-}
-
-h1 + h2 {
-  font-weight: bold;
 }
 
 p {

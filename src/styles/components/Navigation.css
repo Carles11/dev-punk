@@ -117,32 +117,8 @@
   transition: border 0.3s ease-in-out;
 }
 
-.app-nav-mail {
-  background: var(--menuBg);
-  display: flex;
-  align-items: center;
-}
-
 .app-nav-item-responsive {
   display: none;
-}
-
-.app-nav-mail > a {
-  text-decoration: none;
-  background: var(--menuBg);
-  color: var(--secondColor);
-  padding: 1.4rem 1.6rem;
-  font-size: 1rem;
-  transition: color 0.5s;
-}
-
-.app-nav-mail > a:hover {
-  /* color: var(--textColor); */
-  color: black;
-}
-
-.app-nav-mail > a > span {
-  display: none !important;
 }
 
 .app-nav-item:last-of-type {
@@ -165,7 +141,8 @@
 
 .app-nav-item > a:hover,
 .app-subnav-item > a:hover {
-  background: var(--secondColor);
+  background: var(--bgColorLight);
+  color: var(--textColor);
 }
 
 .app-subnav-list {

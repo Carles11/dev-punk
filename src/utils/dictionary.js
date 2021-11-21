@@ -24,10 +24,11 @@ const dictionary = {
     FORM_MESSAGE_PH: 'Escribe aquí',
     FORM_PHONE: 'Si deseas agilizar el proceso, deja un teléfono',
     FORM_PHONE_PH: 'Teléfono',
+    FORM_STEP: 'Paso',
     FORM_TECHNOLOGIES:
       'Qué tecnologías o frameworks debe dominar el programador que buscas?',
     FORM_TECHNOLOGIES_PH: 'Tecnologíass',
-    FORM_STEP: 'Paso',
+    FORM_TITLE: 'Rellena este formulario y te contactaremos en 24 horas',
     HEADER_MAIN: 'devPunk Developers',
     HEADER_TITLE: 'Dev-Punk Developers',
     HEADER_COPYRIGHTS: 'Foto von Anna Tarazevich von Pexels',

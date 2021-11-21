@@ -1,6 +1,6 @@
 .app-footer {
   position: relative;
-  background: var(--mainColorDark);
+  background: var(--bgColor);
   color: white;
   bottom: 0;
   display: flex;
@@ -41,14 +41,13 @@
 }
 
 .app-footer-links li > span {
-  font-family: Lighter;
-  font-size: var(--tinySize);
+  font-size: var(--textSize);
   color: white;
   margin-left: 0.5rem;
 }
 
 .app-footer-links li a {
-  color: var(--secondColor);
+  color: var(--bgColorLight);
 }
 
 .app-footer-imgs {
@@ -85,7 +84,7 @@
 }
 
 .app-footer a > .line span {
-  border-bottom: 1px solid var(--secondColor);
+  border-bottom: 1px solid var(--bgColorLight);
 }
 
 @media only screen and (max-width: 600px) {

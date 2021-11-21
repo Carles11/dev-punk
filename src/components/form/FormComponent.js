@@ -138,7 +138,7 @@ class FormComponent extends Component {
     return (
       <div id="find-form" className="steps-form">
         <div className="form-header">
-          <h1>Rellena este formulario y te contactaremos en 24 horas.</h1>
+          <h1>{DIC.FORM_TITLE}</h1>
           <p>
             {' '}
             {DIC.FORM_STEP}: {currentStep} / 4{' '}
