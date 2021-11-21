@@ -1,10 +1,55 @@
 .about-section {
-  height: 100vh;
-  margin-top: -2rem;
-  color: white;
-  margin-left: 5%;
+  height: auto;
+  width: 100vw;
+  margin-left: -5rem;
+  padding-left: 5rem;
+  margin-top: 11rem;
+  margin-bottom: 4rem;
+  background: var(--bgColorLight);
+  color: var(--textColor);
+}
+.section-title {
+  text-align: center;
+  padding-top: 6rem;
 }
 
-.about-section h2 {
-  padding-top: 11rem;
+.cards-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 4rem auto;
+  background: #fff;
+}
+
+.cards-team-member {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem;
+}
+
+.cards-team-main-info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+.cards-team-main-info img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
+.cards-team-main-data {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+.cards-team-main-name {
+  margin: 1rem auto;
+}
+.cards-team-main-position {
+  margin: auto;
+}
+.cards-team-social-links {
+  display: flex;
+  flex-direction: row;
 }

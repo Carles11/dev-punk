@@ -1,6 +1,11 @@
+html {
+  margin: 0;
+}
+
 body {
   background-color: #001f3f;
-  margin: 0;
+  margin-left: 5%;
+
   font-family: 'Cantarell', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

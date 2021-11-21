@@ -19,7 +19,7 @@ const Step3 = (props) => {
           onChange={handleChange}
         />
       </div>
-      <div className="question">
+      <div className="question question-long">
         <label htmlFor="languages">{DIC.FORM_LANGUAGES}</label>
         <input
           className="form-control"
@@ -31,7 +31,7 @@ const Step3 = (props) => {
           onChange={handleChange}
         />
       </div>
-      <div className="question">
+      <div className="question question-long">
         <label htmlFor="technologies">{DIC.FORM_TECHNOLOGIES}</label>
         <input
           className="form-control"

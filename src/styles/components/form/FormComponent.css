@@ -11,26 +11,6 @@
   padding: 2rem;
 }
 
-.transition,
-form button,
-form .question label,
-form .question input[type='text'] {
-  -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
-  -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
-  -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
-  transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
-}
-
-* {
-  font-family: var(--textFont), Helvetica, sans-serif;
-  font-weight: light;
-  -webkit-font-smoothing: antialiased;
-}
-
-html {
-  background-color: var(--secondColor);
-}
-
 form {
   position: relative;
   display: inline-block;
@@ -110,8 +90,12 @@ form .question label {
   z-index: 2;
   pointer-events: none;
 }
+form .question-long label {
+  margin-top: -55px;
+}
 
-form .question input[type='text'] {
+form .question input[type='text'],
+input[type='number'] {
   appearance: none;
   background-color: none;
   border: 1px solid var(--secondColor);
@@ -129,22 +113,26 @@ form .question input[type='text'] {
   z-index: 1;
 }
 
-form .question input[type='text']:focus {
+form .question input[type='text']:focus,
+input[type='number']:focus {
   outline: none;
   background: var(--secondColor);
   color: white;
   margin-top: 30px;
 }
-form .question input[type='text']:valid {
+form .question input[type='text']:valid,
+input[type='number']:valid {
 }
 
-form .question input[type='text']:focus ~ label {
+form .question input[type='text']:focus ~ label,
+input[type='number'] :focus ~ label {
   -moz-transform: translate(0, -35px);
   -ms-transform: translate(0, -35px);
   -webkit-transform: translate(0, -35px);
   transform: translate(0, -35px);
 }
-form .question input[type='text']:valid ~ label {
+form .question input[type='text']:valid ~ label,
+input[type='number']:valid ~ label {
   text-transform: uppercase;
   font-style: italic;
   -moz-transform: translate(5px, -35px) scale(0.6);

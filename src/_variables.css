@@ -1,8 +1,10 @@
 :root {
   --textFont: 'Cantarell';
   --textColor: #333333;
+  --textColorLight: #e2dfdf;
   --navTextColor: #e2dfdf;
   --bgColor: #001f3f;
+  --bgColorLight: #e2dfdf;
   --mainColor: #612559;
   --mainColorDark: #40173a;
   --secondColor: #ff4a56;
