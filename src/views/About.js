@@ -35,7 +35,8 @@ const About = ({ DIC }) => {
     <div className="about-section">
       <div className="section-title">
         <h2>{DIC.ABOUT_TITLE}</h2>
-        <p>{DIC.ABOUT_DESCRIPTION}</p>
+        <p>{DIC.ABOUT_DESCRIPTION_A}</p>
+        <p>{DIC.ABOUT_DESCRIPTION_B}</p>
       </div>
       <div className="cards-section">
         {team.map((member, i) => {
@@ -57,8 +58,14 @@ const About = ({ DIC }) => {
                 </div>
               </div>
               <div className="cards-team-social-links">
-                <div className="twitter">{member.twitterUrl}</div>
-                <div className="linkedin">{member.linkedInUrl}</div>
+                <div className="twitter">
+                  <i className="fab fa-twitter-square"></i>
+                  {member.twitterUrl}
+                </div>
+                <div className="linkedin">
+                  <i className="fab fa-linkedin"></i>
+                  {member.linkedInUrl}
+                </div>
               </div>
             </div>
           )

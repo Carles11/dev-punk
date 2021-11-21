@@ -2,15 +2,20 @@
   height: auto;
   width: 100vw;
   margin-left: -5rem;
-  padding-left: 5rem;
-  margin-top: 11rem;
+  margin-top: 6rem;
   margin-bottom: 4rem;
   background: var(--bgColorLight);
   color: var(--textColor);
 }
 .section-title {
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 2rem;
+}
+.section-title h2 {
+  text-transform: capitalize;
+}
+.section-title p {
+  margin: 2rem 8%;
 }
 
 .cards-section {
@@ -29,6 +34,7 @@
   transition: all 0.2s ease-in-out;
 }
 .cards-team-member:hover {
+  cursor: pointer;
   border: 1px solid var(--bgColorLight);
   border-radius: 11px;
   transform: scale(1.2); /* Igual que: scaleX(0.7) scaleY(0.7) */

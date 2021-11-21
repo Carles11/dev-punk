@@ -5,13 +5,30 @@ html {
 body {
   background-color: #001f3f;
   margin-left: 5%;
-
   font-family: 'Cantarell', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+h1 + h2 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
 }
