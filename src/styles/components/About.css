@@ -29,7 +29,7 @@
   transition: all 0.2s ease-in-out;
 }
 .cards-team-member:hover {
-  border: 1px solid #787878;
+  border: 1px solid var(--bgColorLight);
   border-radius: 11px;
   transform: scale(1.2); /* Igual que: scaleX(0.7) scaleY(0.7) */
 }
