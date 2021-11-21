@@ -14,6 +14,7 @@ class Navigation extends React.Component {
       redirectTo: '',
       prevScrollpos: window.pageYOffset,
       visibleNav: true,
+      location: '',
     }
   }
   // Adds an event listener when the component is mount.
@@ -61,7 +62,10 @@ class Navigation extends React.Component {
   render() {
     const { DIC } = this.props
     const { visible, visibleNav } = this.state
+    const pageIsHome = window.location.pathname === '/'
+
     const icon = visible ? 'close' : 'menu'
+
     const navbarHidden = visibleNav ? '' : 'navbar--hidden'
 
     const NAV = [
@@ -77,7 +81,7 @@ class Navigation extends React.Component {
 
     const List = (
       <ul className={`app-nav-list ${icon}`}>
-        <li className="app-nav-item btn-close">
+        <li className={`app-nav-item btn-close `}>
           <Link onClick={this.handleNavigation} to="/" name={'app-landing'}>
             <img name={'app-landing'} src={Logo} alt="devPunk Logo" />
           </Link>
@@ -86,17 +90,21 @@ class Navigation extends React.Component {
             <span className={`icon-x-circle`} />
           </button>
         </li>
-        {/* <li className="app-nav-item logo">
-          <Link to="/">
-            <img
-              onClick={this.handleNavigation}
-              data-scroll={true}
-              name="app-header"
-              src={Logo}
-              alt="Leo, leo"
-            />
-          </Link>
-        </li> */}
+        {!pageIsHome && (
+          <li
+            className={`app-nav-item logo ${!pageIsHome ? 'alt-nav-item' : ''}`}
+          >
+            <Link to="/">
+              <img
+                onClick={this.handleNavigation}
+                data-scroll={true}
+                name="app-header"
+                src={Logo}
+                alt="devPunk logo"
+              />
+            </Link>
+          </li>
+        )}
         {NAV.map((item, i) => {
           const label = item.label
           const children = item.children.length
@@ -104,7 +112,10 @@ class Navigation extends React.Component {
           const iconDown = children ? 'item dropdown' : ''
 
           return (
-            <li key={label} className="app-nav-item">
+            <li
+              key={label}
+              className={`app-nav-item  ${!pageIsHome ? 'alt-nav-item' : ''}`}
+            >
               {item.link ? (
                 <Link
                   className={iconDown}
@@ -114,9 +125,9 @@ class Navigation extends React.Component {
                 >
                   {item?.label?.toUpperCase()}
                 </Link>
-              ) : (
+              ) : item.href ? (
                 <a href={item.href}> {item?.label?.toUpperCase()}</a>
-              )}
+              ) : null}
               {!!children && (
                 <ul className={`app-subnav-list`}>
                   {item.children?.map((item) => {

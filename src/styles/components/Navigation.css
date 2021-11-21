@@ -46,14 +46,6 @@
   overflow: visible;
 }
 
-.app-nav-item:nth-child(2) {
-  visibility: hidden;
-  cursor: none;
-}
-.app-nav-item:nth-child(2):hover {
-  visibility: hidden;
-  cursor: none;
-}
 .app-nav-item > a,
 .app-nav-item > button {
   position: relative;
@@ -73,7 +65,7 @@
   line-height: 1;
 }
 
-/* .app-nav-item.logo,
+.app-nav-item.logo,
 .app-nav-item.logo:hover {
   background: var(--menuBg);
   flex: 1 0 auto;
@@ -100,8 +92,19 @@
 .app-nav-item.logo > a > img:hover {
   width: 60px;
   opacity: 1;
-} */
+}
 
+.alt-nav-item {
+  background: var(--bgColor);
+}
+.app-nav-item:nth-child(3) {
+  visibility: hidden;
+  cursor: none;
+}
+.app-nav-item:nth-child(3):hover {
+  visibility: hidden;
+  cursor: none;
+}
 .item.dropdown:after {
   content: '';
   position: absolute;
