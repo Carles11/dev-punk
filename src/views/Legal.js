@@ -24,18 +24,36 @@ const Legal = (props) => {
         <h1 className="tit-header">{DIC.AVISO_LEGAL_CONTENT}</h1>
       </header>
       <article className="legal-section">
+        <p>
+          {DIC.AVISO_LEGAL_NAME}, responsable del sitio web, en adelante
+          <strong> {DIC.AVISO_LEGAL_SITIO}</strong>, pone a disposición de los
+          usuarios el presente documento, con el que pretende dar cumplimiento a
+          las obligaciones dispuestas en la Ley 34/2002, de 11 de julio, de
+          Servicios de la Sociedad de la Información y del Comercio Electrónico
+          (LSSICE), así como informar a todos los usuarios del sitio web
+          respecto a cuáles son las condiciones de uso. Toda persona que acceda
+          a este sitio web asume el papel de usuario, comprometiéndose a la
+          observancia y cumplimiento riguroso de las disposiciones aquí
+          dispuestas, así como a cualquier otra disposición legal que fuera de
+          aplicación. {DIC.AVISO_LEGAL_NAME} se reserva el derecho de modificar
+          cualquier tipo de información que pudiera aparecer en el sitio web,
+          sin que exista obligación de preavisar o poner en conocimiento de los
+          usuarios dichas obligaciones, entendiéndose como suficiente con la
+          publicación en el sitio web de {DIC.AVISO_LEGAL_NAME}.
+        </p>
         <ol className="app-section-width app-olist">
           <li className="app-olist-item">
+            <strong className="txt-highlight">
+              {' '}
+              DATOS IDENTIFICATIVOS:&nbsp;
+              <br />
+            </strong>
             <p className="txt txt-inline">
-              <strong className="txt-highlight">Einführung:&nbsp;</strong>
-              Durch das Internets und die elektronischen Datenverarbeitung kann
-              das Individuum das Gefühl bekomamen, den Überblick darüber zu
-              verlieren, wo und zu welchem Zweck seine Daten gespeichert werden.
-              Die sorgfältige und sichere Behandlung Ihrer Daten ist uns
-              wichtig. Deshalb möchten wir Ihnen als Besucher unsere Homepage
-              erläutern, wie der Hessenwaldschule Weiterstadt die
-              Vertraulichkeit Ihrer personenbezogenen Daten sicherstellt und die
-              Persönlichkeitsrechte respektiert.
+              Denominación social: {DIC.AVISO_LEGAL_NAME},<br /> Nombre
+              comercial: {DIC.AVISO_LEGAL_NAME} CIF: {DIC.AVISO_LEGAL_CIF}{' '}
+              <br />
+              Dirección: {DIC.AVISO_LEGAL_ADDRESS},<br />
+              e-mail:{DIC.AVISO_LEGAL_EMAIL}
             </p>
           </li>
           <p className="txt">

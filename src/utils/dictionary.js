@@ -1,6 +1,12 @@
 const dictionary = {
   es: {
+    AVISO_LEGAL_ADDRESS:
+      'C/ Fuenterrabía 6, esc. centro, 2° izq., 28014 Madrid, Espana',
+    AVISO_LEGAL_CIF: 'B86815503',
     AVISO_LEGAL_CONTENT: 'contenido aviso legal',
+    AVISO_LEGAL_EMAIL: 'contact@dev-punk.com',
+    AVISO_LEGAL_NAME: 'SOMCINC WORLD S.L.',
+    AVISO_LEGAL_SITIO: 'www.dev-punk.com',
     AVISO_LEGAL_TITLE: 'Aviso legal',
     ABOUT_TITLE: 'Sobre nosotros',
     ABOUT_DESCRIPTION_A:
