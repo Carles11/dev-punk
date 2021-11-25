@@ -74,7 +74,7 @@
 
 .app-nav-item.logo > a,
 .app-nav-item.logo > a:hover {
-  background: var(--menuBg);
+  background: var(--menuBg) !important;
   padding: 0;
   cursor: default;
 }
@@ -95,16 +95,20 @@
 }
 
 .alt-nav-item {
-  background: var(--bgColor);
+  color: var(--bgColor);
 }
-.app-nav-item:nth-child(3) {
-  visibility: hidden;
-  cursor: none;
+
+.alt-nav-item > a,
+.alt-nav-item > button {
+  background: var(--menuBg);
+  color: var(--bgColor);
 }
-.app-nav-item:nth-child(3):hover {
-  visibility: hidden;
-  cursor: none;
+.alt-nav-item > a:hover,
+.alt-nav-item > button:hover {
+  background: var(--bgColor) !important;
+  color: var(--textColorLight) !important;
 }
+
 .item.dropdown:after {
   content: '';
   position: absolute;

@@ -92,7 +92,9 @@ class Navigation extends React.Component {
         </li>
         {!pageIsHome && (
           <li
-            className={`app-nav-item logo ${!pageIsHome ? 'alt-nav-item' : ''}`}
+            className={`app-nav-item logo ${
+              !pageIsHome ? 'alt-nav-item ' : ''
+            }`}
           >
             <Link to="/">
               <img
