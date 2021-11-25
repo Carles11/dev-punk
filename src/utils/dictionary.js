@@ -37,7 +37,7 @@ const dictionary = {
     MORE_INFO: 'Más información',
     NAME: 'devPunk',
     NAV_AVISO_LEGAL: 'Aviso legal',
-    NAV_FIND_DEV: 'Encuentra un programador',
+    NAV_FIND_DEV: 'programadores',
     NAV_ABOUT: 'Sobre nosotros',
     NAV_HOW: 'Cómo lo hacemos?',
     NAV_HOME: 'Home',

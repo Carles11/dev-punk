@@ -24,16 +24,16 @@
   justify-content: space-evenly;
   margin: 4rem auto;
   background: #fff;
+  margin-bottom: 4rem;
 }
 
 .cards-team-member {
   display: flex;
-  flex-direction: row;
-  margin: 3rem;
+  flex-direction: column;
+  margin: 4rem;
   transition: all 0.2s ease-in-out;
 }
 .cards-team-member:hover {
-  cursor: pointer;
   border: 1px solid var(--bgColorLight);
   border-radius: 11px;
   transform: scale(1.2); /* Igual que: scaleX(0.7) scaleY(0.7) */
@@ -61,7 +61,15 @@
 .cards-team-main-position {
   margin: auto;
 }
+.cards-team-main-email {
+  margin: 1rem auto;
+}
 .cards-team-social-links {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+.cards-team-social-links:hover {
+  cursor: pointer;
 }

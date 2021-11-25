@@ -9,6 +9,7 @@ const About = ({ DIC }) => {
       firstName: 'Carles',
       lastName: 'del Río',
       photoLink: dummyPic,
+      email: 'contact@dev-punk.com',
       position: 'CTO',
       twitterUrl: '',
       linkedInUrl: '',
@@ -17,15 +18,8 @@ const About = ({ DIC }) => {
       firstName: 'Xavier',
       lastName: 'del Río',
       photoLink: dummyPic,
+      email: 'contact@dev-punk.com',
       position: 'CEO',
-      twitterUrl: '',
-      linkedInUrl: '',
-    },
-    {
-      firstName: 'Mark',
-      lastName: 'Zückerberg',
-      photoLink: dummyPic,
-      position: 'Investor',
       twitterUrl: '',
       linkedInUrl: '',
     },
@@ -55,15 +49,18 @@ const About = ({ DIC }) => {
                   <div className="cards-team-main-position">
                     {member.position}
                   </div>
+                  <div className="cards-team-main-email">
+                    <a href={`mailto:${member.email}`}>{member.email}</a>
+                  </div>
                 </div>
               </div>
               <div className="cards-team-social-links">
                 <div className="twitter">
-                  <i className="fab fa-twitter-square"></i>
+                  <i className="fab fa-twitter-square fa-2x"></i>
                   {member.twitterUrl}
                 </div>
                 <div className="linkedin">
-                  <i className="fab fa-linkedin"></i>
+                  <i className="fab fa-linkedin fa-2x"></i>
                   {member.linkedInUrl}
                 </div>
               </div>
