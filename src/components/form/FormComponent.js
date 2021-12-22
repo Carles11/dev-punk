@@ -139,10 +139,10 @@ class FormComponent extends Component {
       <div id="find-form" className="steps-form">
         <div className="form-header">
           <h1>{DIC.FORM_TITLE}</h1>
-          <p>
+          {/* <p>
             {' '}
             {DIC.FORM_STEP}: {currentStep} / 4{' '}
-          </p>
+          </p> */}
         </div>
         <form
           onSubmit={(e) => {
