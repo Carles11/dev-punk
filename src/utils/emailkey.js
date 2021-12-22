@@ -1,2 +1,0 @@
-User_ID: user_5HJvI2zi5tRGkdRn7cAvt
-Access_Token: 4c4364943890a44473bd50920eb34517
