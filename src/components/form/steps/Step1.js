@@ -8,14 +8,14 @@ const Step1 = (props) => {
   return (
     <>
       <div className="question">
-        <label htmlFor="firstName">{DIC.FORM_NAME}</label>
+        <label htmlFor="fullName">{DIC.FORM_NAME}</label>
         <input
           className=""
-          id="firstName"
-          name="firstName"
+          id="fullName"
+          name="fullName"
           type="text"
           placeholder={DIC.FORM_NAME_PH}
-          value={props.firstName}
+          value={props.fullName}
           onChange={props.handleChange}
         />
       </div>
@@ -38,7 +38,7 @@ const Step1 = (props) => {
 Step1.propTypes = {
   currentStep: PropTypes.number,
   handleChange: PropTypes.func.isRequired,
-  firstName: PropTypes.string,
+  fullName: PropTypes.string,
   firm: PropTypes.string,
   DIC: PropTypes.object,
 }

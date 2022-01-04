@@ -14,8 +14,8 @@ class FormComponent extends Component {
     super(props)
     this.state = {
       currentStep: 1,
-      firstName: '',
-      firm: '',
+      fullName: '',
+      enterprise: '',
       message: '',
       email: '',
       phone: null,
@@ -99,8 +99,8 @@ class FormComponent extends Component {
   submitData = (e) => {
     const { handleSubmit } = this.props
     const {
-      firstName,
-      firm,
+      fullName,
+      enterprise,
       message,
       email,
       phone,
@@ -108,10 +108,15 @@ class FormComponent extends Component {
       languages,
       technologies,
     } = this.state
+    const firstName = fullName?.split(' ')[0]
+    const lastName = fullName?.split(' ')[1]
 
     const data = {
-      firstName,
-      firm,
+      from_name: fullName,
+      to_name: 'Charlie',
+      firstname: firstName,
+      lastname: lastName,
+      enterprise,
       message,
       email,
       phone,
@@ -126,8 +131,8 @@ class FormComponent extends Component {
     const { DIC } = this.props
     const {
       currentStep,
-      firstName,
-      firm,
+      fullName,
+      enterprise,
       message,
       email,
       phone,
@@ -155,8 +160,8 @@ class FormComponent extends Component {
           <Step1
             currentStep={currentStep}
             handleChange={this.handleChange}
-            firstName={firstName}
-            firm={firm}
+            fullName={fullName}
+            enterprise={enterprise}
             DIC={DIC}
           />
           <Step2
