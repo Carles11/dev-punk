@@ -7,10 +7,9 @@ const Step2 = (props) => {
   const { DIC } = props
   return (
     <>
-      <div className="question">
+      <div className="question question-long">
         <label htmlFor="email">{DIC.FORM_EMAIL}</label>
         <input
-          className="form-control"
           id="email"
           name="email"
           type="text"
@@ -19,10 +18,9 @@ const Step2 = (props) => {
           onChange={props.handleChange}
         />
       </div>
-      <div className="question">
+      <div className="question question-long">
         <label htmlFor="secondName">{DIC.FORM_PHONE}</label>
         <input
-          className="form-control"
           id="secondName"
           name="secondName"
           type="text"

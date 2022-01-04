@@ -14,7 +14,7 @@ const Home = ({ DIC }) => {
     const templateID = process.env.REACT_APP_EMAIL_Template_ID
     const showName = data.from_name?.split(' ')[0]
     init(process.env.REACT_APP_EMAIL_User_ID)
-    console.log('daaaaata', data)
+
     emailjs.send(serviceID, templateID, data).then(
       (result) => {
         Swal.fire({

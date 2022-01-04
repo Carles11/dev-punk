@@ -3,10 +3,16 @@
 }
 .header-logo img {
   position: absolute;
-  z-index: 999999;
+  z-index: 1;
   top: 16%;
   left: 8%;
   transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 649px) {
+  .header-logo img {
+    left: 11%;
+    width: 36%;
+  }
 }
 
 .flicker-in-glow {
@@ -32,6 +38,13 @@
   color: white;
   font-size: 6px;
 }
+
+@media only screen and (max-width: 649px) {
+  .header-copyrights {
+    display: none;
+  }
+}
+
 .app-header-bg {
   margin: 0;
   overflow: hidden;

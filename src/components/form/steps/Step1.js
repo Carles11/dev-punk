@@ -19,7 +19,7 @@ const Step1 = (props) => {
           onChange={props.handleChange}
         />
       </div>
-      <div className="question">
+      <div className="question question-long">
         <label htmlFor="firm">{DIC.FORM_FIRM}</label>
         <input
           className=""

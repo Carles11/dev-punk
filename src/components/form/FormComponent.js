@@ -108,6 +108,7 @@ class FormComponent extends Component {
       languages,
       technologies,
     } = this.state
+
     const firstName = fullName?.split(' ')[0]
     const lastName = fullName?.split(' ')[1]
 

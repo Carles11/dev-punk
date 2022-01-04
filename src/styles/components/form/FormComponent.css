@@ -1,6 +1,10 @@
 .steps-form {
   height: auto;
-  margin: 6rem;
+}
+@media only screen and (min-width: 649px) {
+  .steps-form {
+    margin: 6rem;
+  }
 }
 .form-header {
   margin: 0 !important;
@@ -20,7 +24,7 @@ form {
   position: relative;
   display: inline-block;
   max-width: 700px;
-  min-width: 500px;
+  min-width: max-content;
   box-sizing: border-box;
   padding: 30px 25px;
   background-color: white;
@@ -98,6 +102,12 @@ form .question label {
 form .question-long label {
   margin-top: -55px;
 }
+form .question-extra-long label {
+  margin-top: -55px;
+}
+form .question-extra-long input {
+  margin-top: 23px;
+}
 
 form .question input[type='text'],
 input[type='number'] {
@@ -123,7 +133,6 @@ input[type='number']:focus {
   outline: none;
   background: var(--secondColor);
   color: white;
-  margin-top: 30px;
 }
 
 form .question input[type='text']:focus ~ label,
