@@ -70,7 +70,7 @@ class Navigation extends React.Component {
 
     const NAV = [
       { label: '', children: [] },
-      { label: DIC.NAV_FIND_DEV, href: '/#find-form', children: [] },
+      // { label: DIC.NAV_FIND_DEV, href: '/#find-form', children: [] },
       {
         label: DIC.NAV_ABOUT,
         link: '/about',

@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 
-import dummyPic from '../assets/imgs/team/dummy.webp'
+// import dummyPic from '../assets/imgs/team/dummy.webp'
+import xaviPic from '../assets/imgs/team/Xavi.jpg'
+import charliePic from '../assets/imgs/team/Carles.webp'
 import '../styles/components/About.css'
 
 const About = ({ DIC }) => {
@@ -8,18 +10,18 @@ const About = ({ DIC }) => {
     {
       firstName: 'Carles',
       lastName: 'del Río',
-      photoLink: dummyPic,
+      photoLink: charliePic,
       email: 'contact@dev-punk.com',
-      position: 'CTO',
+      position: 'CTO & Founder',
       twitterUrl: '',
       linkedInUrl: '',
     },
     {
-      firstName: 'Xavier',
+      firstName: 'Xavi',
       lastName: 'del Río',
-      photoLink: dummyPic,
+      photoLink: xaviPic,
       email: 'contact@dev-punk.com',
-      position: 'CEO',
+      position: 'CEO & Founder',
       twitterUrl: '',
       linkedInUrl: '',
     },
