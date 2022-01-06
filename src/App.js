@@ -1,5 +1,6 @@
-import React from 'react'
 import Helmet from 'react-helmet'
+import { Provider } from 'react-redux'
+import store from './redux/configureStore'
 
 import Routes from './Routes'
 
@@ -13,7 +14,7 @@ const DIC = getDictionary()
 import './App.css'
 
 const App = (props) => (
-  <React.Fragment>
+  <Provider store={store}>
     <Helmet
       titleTemplate={`%s | ${DIC.NAME} - ${DIC.DESCRIPTION}`}
       defaultTitle={`${DIC.NAME} - ${DIC.DESCRIPTION}`}
@@ -24,7 +25,7 @@ const App = (props) => (
 
     <Routes {...props} DIC={DIC} />
     <Footer DIC={DIC} FOOTER_DATA={FOOTER_DATA} />
-  </React.Fragment>
+  </Provider>
 )
 
 export default App

@@ -1,4 +1,8 @@
+/*eslint-env es6*/
+
 import { Component } from 'react'
+import { connect } from 'react-redux'
+import { reduxForm } from 'redux-form'
 import PropTypes from 'prop-types'
 
 import Button from '../Button.js'
@@ -98,6 +102,7 @@ class FormComponent extends Component {
 
   submitData = (e) => {
     const { handleSubmit } = this.props
+
     const {
       fullName,
       enterprise,
@@ -202,4 +207,12 @@ FormComponent.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
 }
 
-export default FormComponent
+export default connect(
+  null,
+  null,
+)(
+  reduxForm({
+    // a unique name for the form
+    form: 'contact',
+  })(FormComponent),
+)

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { Field } from 'redux-form'
 
 const Step1 = (props) => {
   if (props.currentStep !== 1) {
@@ -7,7 +8,20 @@ const Step1 = (props) => {
   const { DIC } = props
   return (
     <>
+      {' '}
       <div className="question">
+        <label htmlFor="firstName">{DIC.FORM_NAME}</label>
+        <Field
+          name="fullName"
+          component="input"
+          id="fullName"
+          type="text"
+          placeholder={DIC.FORM_NAME_PH}
+          value={props.fullName}
+          onChange={props.handleChange}
+        />
+      </div>
+      {/* <div className="question">
         <label htmlFor="fullName">{DIC.FORM_NAME}</label>
         <input
           className=""
@@ -18,7 +32,7 @@ const Step1 = (props) => {
           value={props.fullName}
           onChange={props.handleChange}
         />
-      </div>
+      </div> */}
       <div className="question question-long">
         <label htmlFor="firm">{DIC.FORM_FIRM}</label>
         <input
