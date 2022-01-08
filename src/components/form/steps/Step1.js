@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import { Field } from 'redux-form'
 import { renderField } from '../../../redux/redux-form/renderFields'
 import { required, minLength2 } from '../../../utils/validations'
+
 const Step1 = (props) => {
   if (props.currentStep !== 1) {
     return null
@@ -32,7 +33,7 @@ const Step1 = (props) => {
         label={DIC.FORM_FIRM}
         value={props.firm}
         onChange={props.handleChange}
-        validate={[required, minLength2]}
+        validate={[minLength2]}
       />
     </>
   )

@@ -17,19 +17,25 @@ export const renderField = ({
     </div>
   </div>
 )
-export const renderNumberField = ({
+export const renderPhoneNumberField = ({
   input,
   className,
   name,
   label,
   type,
   placeholder,
+  pattern,
   meta: { touched, error, warning },
 }) => (
   <div className={className}>
     <label htmlFor={name}>{label}</label>
     <div>
-      <input {...input} placeholder={placeholder} type={type} />
+      <input
+        {...input}
+        pattern={pattern}
+        placeholder={placeholder}
+        type={type}
+      />
       {touched &&
         ((error && <span>{error}</span>) ||
           (warning && <span>{warning}</span>))}

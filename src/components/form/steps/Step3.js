@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import { Field } from 'redux-form'
 
 import { renderField } from '../../../redux/redux-form/renderFields'
+import { number } from '../../../utils/validations'
 
 const Step3 = (props) => {
   if (props.currentStep !== 3) {
@@ -18,9 +19,10 @@ const Step3 = (props) => {
         label={DIC.FORM_DEVELOPERS}
         className="question question-long"
         component={renderField}
-        placeholder={DIC.FORM_FORM_DEVELOPERS_PHEMAIL_PH}
+        placeholder={DIC.FORM_FORM_DEVELOPERS_PH}
         value={developers}
         onChange={handleChange}
+        validate={[number]}
       />
       <Field
         id="languages"

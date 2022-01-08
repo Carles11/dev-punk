@@ -114,8 +114,17 @@ form .question label {
   z-index: 2;
   pointer-events: none;
 }
+
+form .question span {
+  position: absolute;
+  bottom: -22%;
+  left: 5%;
+  color: var(--errorColor);
+  font-weight: bold;
+}
+
 form .question-long label {
-  margin-top: -55px;
+  margin-top: -33px;
 }
 form .question-extra-long label {
   margin-top: -55px;

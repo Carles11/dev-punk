@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types'
 import { Field } from 'redux-form'
 
-import { renderField } from '../../../redux/redux-form/renderFields'
+import {
+  renderField,
+  renderPhoneNumberField,
+} from '../../../redux/redux-form/renderFields'
+import { required, email, phoneNumber } from '../../../utils/validations'
 
 const Step2 = (props) => {
   if (props.currentStep !== 2) {
@@ -20,18 +24,21 @@ const Step2 = (props) => {
         placeholder={DIC.FORM_EMAIL_PH}
         value={props.email}
         onChange={props.handleChange}
+        validate={[required, email]}
       />
 
       <Field
         id="phone"
-        type="number"
+        type="tel"
         name="phone"
         label={DIC.FORM_PHONE}
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
         className="question question-long"
-        component={renderField}
+        component={renderPhoneNumberField}
         placeholder={DIC.FORM_PHONE_PH}
         value={props.phone}
         onChange={props.handleChange}
+        validate={[phoneNumber]}
       />
     </>
   )
