@@ -28,13 +28,28 @@ form {
   box-sizing: border-box;
   padding: 30px 25px;
   background-color: white;
-  border-radius: 40px;
+  border-radius: 11px;
   margin: 40px 0;
   left: 50%;
   -moz-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
+}
+@media only screen and (min-width: 678px) {
+  form {
+    min-width: 75%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  form {
+    min-width: 60%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  form {
+    min-width: 50%;
+  }
 }
 
 form h1 {
