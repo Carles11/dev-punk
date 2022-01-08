@@ -1,4 +1,7 @@
 import PropTypes from 'prop-types'
+import { Field } from 'redux-form'
+
+import { renderField } from '../../../redux/redux-form/renderFields'
 
 const Step2 = (props) => {
   if (props.currentStep !== 2) {
@@ -7,28 +10,29 @@ const Step2 = (props) => {
   const { DIC } = props
   return (
     <>
-      <div className="question question-long">
-        <label htmlFor="email">{DIC.FORM_EMAIL}</label>
-        <input
-          id="email"
-          name="email"
-          type="text"
-          placeholder={DIC.FORM_EMAIL_PH}
-          value={props.email}
-          onChange={props.handleChange}
-        />
-      </div>
-      <div className="question question-long">
-        <label htmlFor="secondName">{DIC.FORM_PHONE}</label>
-        <input
-          id="secondName"
-          name="secondName"
-          type="text"
-          placeholder={DIC.FORM_PHONE_PH}
-          value={props.phone}
-          onChange={props.handleChange}
-        />
-      </div>
+      <Field
+        id="email"
+        type="text"
+        name="email"
+        label={DIC.FORM_EMAIL}
+        className="question"
+        component={renderField}
+        placeholder={DIC.FORM_EMAIL_PH}
+        value={props.email}
+        onChange={props.handleChange}
+      />
+
+      <Field
+        id="phone"
+        type="number"
+        name="phone"
+        label={DIC.FORM_PHONE}
+        className="question question-long"
+        component={renderField}
+        placeholder={DIC.FORM_PHONE_PH}
+        value={props.phone}
+        onChange={props.handleChange}
+      />
     </>
   )
 }
