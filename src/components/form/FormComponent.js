@@ -12,6 +12,7 @@ import Step3 from './steps/Step3'
 import Step4 from './steps/Step4'
 
 import '../../styles/components/form/FormComponent.css'
+import { validations as validate } from '../../redux/redux-form/validations'
 
 class FormComponent extends Component {
   constructor(props) {
@@ -214,5 +215,6 @@ export default connect(
   reduxForm({
     // a unique name for the form
     form: 'contact',
+    validate,
   })(FormComponent),
 )

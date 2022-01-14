@@ -5,7 +5,7 @@ import {
   renderField,
   renderPhoneNumberField,
 } from '../../../redux/redux-form/renderFields'
-import { required, email, phoneNumber } from '../../../utils/validations'
+import { required } from '../../../redux/redux-form/validations'
 
 const Step2 = (props) => {
   if (props.currentStep !== 2) {
@@ -24,7 +24,7 @@ const Step2 = (props) => {
         placeholder={DIC.FORM_EMAIL_PH}
         value={props.email}
         onChange={props.handleChange}
-        validate={[required, email]}
+        validate={[required]}
       />
 
       <Field
@@ -38,7 +38,6 @@ const Step2 = (props) => {
         placeholder={DIC.FORM_PHONE_PH}
         value={props.phone}
         onChange={props.handleChange}
-        validate={[phoneNumber]}
       />
     </>
   )

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { Field } from 'redux-form'
 import { renderField } from '../../../redux/redux-form/renderFields'
-import { required, minLength2 } from '../../../utils/validations'
+import { required, minLength2 } from '../../../redux/redux-form/validations'
 
 const Step1 = (props) => {
   if (props.currentStep !== 1) {

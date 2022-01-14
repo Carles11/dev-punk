@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { Field } from 'redux-form'
 
 import { renderField } from '../../../redux/redux-form/renderFields'
-import { number } from '../../../utils/validations'
+import { number } from '../../../redux/redux-form/validations'
 
 const Step3 = (props) => {
   if (props.currentStep !== 3) {
