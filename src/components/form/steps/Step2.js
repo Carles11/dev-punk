@@ -57,7 +57,7 @@ const Step2 = (props) => {
 Step2.propTypes = {
   currentStep: PropTypes.number,
   email: PropTypes.string,
-  phone: PropTypes.number,
+  phone: PropTypes.string,
   handleChange: PropTypes.func.isRequired,
   DIC: PropTypes.object,
 }
