@@ -2,8 +2,9 @@ export const validations = (values) => {
   const errors = {}
   if (!values.fullName) {
     errors.fullName = 'Required'
-  } else if (values.fullName.length < 4) {
-    errors.fullName = 'Must be at least 4 carachters'
+  } else if (values.fullName.length < 21) {
+    errors.fullName =
+      'Parece que tu nombre es muy largo. Lo puedes reducir a un máximo de 21 caracteres?'
   }
   if (!values.email) {
     errors.email = 'Required'

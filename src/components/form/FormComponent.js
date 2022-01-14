@@ -31,10 +31,15 @@ class FormComponent extends Component {
   }
 
   handleChange = (event) => {
-    const { name, value } = event.target
-    this.setState({
-      [name]: value,
-    })
+    console.log('EVEEEEEEEEENT', event)
+    if (event.target) {
+      const { name, value } = event.target
+      this.setState({
+        [name]: value,
+      })
+    } else {
+      this.setState({ phone: event })
+    }
   }
 
   _next = () => {

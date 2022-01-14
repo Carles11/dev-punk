@@ -1,9 +1,12 @@
 import PropTypes from 'prop-types'
 import { Field } from 'redux-form'
 
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
+
 import {
   renderField,
-  renderPhoneNumberField,
+  // renderPhoneNumberField,
 } from '../../../redux/redux-form/renderFields'
 import { required } from '../../../redux/redux-form/validations'
 
@@ -27,7 +30,7 @@ const Step2 = (props) => {
         validate={[required]}
       />
 
-      <Field
+      {/* <Field
         id="phone"
         type="tel"
         name="phone"
@@ -38,6 +41,14 @@ const Step2 = (props) => {
         placeholder={DIC.FORM_PHONE_PH}
         value={props.phone}
         onChange={props.handleChange}
+        validate={[number]}
+      /> */}
+      <label htmlFor="phone">{DIC.FORM_PHONE}</label>
+      <PhoneInput
+        country="es"
+        value={props.phone}
+        onChange={props.handleChange}
+        preferredCountries={['us', 'gb', 'fr', 'de', 'es', 'it']}
       />
     </>
   )
