@@ -31,7 +31,6 @@ class FormComponent extends Component {
   }
 
   handleChange = (event) => {
-    console.log('EVEEEEEEEEENT', event)
     if (event.target) {
       const { name, value } = event.target
       this.setState({
