@@ -175,3 +175,7 @@ input[type='number']:valid ~ label {
   -webkit-transform: translate(5px, -35px) scale(0.6);
   transform: translate(5px, -35px) scale(0.6);
 }
+
+form .react-tel-input {
+  margin-left: 1rem;
+}

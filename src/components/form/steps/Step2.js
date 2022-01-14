@@ -43,13 +43,24 @@ const Step2 = (props) => {
         onChange={props.handleChange}
         validate={[number]}
       /> */}
-      <label htmlFor="phone">{DIC.FORM_PHONE}</label>
-      <PhoneInput
-        country="es"
-        value={props.phone}
-        onChange={props.handleChange}
-        preferredCountries={['us', 'gb', 'fr', 'de', 'es', 'it']}
-      />
+      <div className="question">
+        <label htmlFor="phone">{DIC.FORM_PHONE}</label>
+        <PhoneInput
+          country="es"
+          value={props.phone}
+          onChange={props.handleChange}
+          preferredCountries={['us', 'gb', 'fr', 'de', 'es', 'it']}
+          isValid={(value, country) => {
+            if (value.match(/12345/)) {
+              return 'Número inválido: ' + value + ', ' + country.name
+            } else if (value.match(/1234/)) {
+              return false
+            } else {
+              return true
+            }
+          }}
+        />
+      </div>
     </>
   )
 }
