@@ -2,7 +2,7 @@ export const validations = (values) => {
   const errors = {}
   if (!values.fullName) {
     errors.fullName = 'Required'
-  } else if (values.fullName.length < 21) {
+  } else if (values.fullName.length > 21) {
     errors.fullName =
       'Parece que tu nombre es muy largo. Lo puedes reducir a un máximo de 21 caracteres?'
   }
@@ -11,7 +11,7 @@ export const validations = (values) => {
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
     errors.email = 'Dirección de email inválida'
   }
-  if (!values.phone && isNaN(Number(values.phone))) {
+  if (values.phone && isNaN(Number(values.phone))) {
     errors.phone = 'Must be a number'
   }
   return errors

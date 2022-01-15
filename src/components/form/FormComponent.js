@@ -43,14 +43,23 @@ class FormComponent extends Component {
 
   _next = () => {
     let currentStep = this.state.currentStep
-    currentStep = currentStep >= 3 ? 4 : currentStep + 1
-    this.setState({
-      currentStep: currentStep,
-    })
+
+    const { validate } = this.props
+
+    console.log('ERERERER', validate)
+    if (!validate) {
+      currentStep = currentStep >= 3 ? 4 : currentStep + 1
+      this.setState({
+        currentStep: currentStep,
+      })
+    } else {
+      alert('Revisa los campos. Parece que hay algún error.')
+    }
   }
 
   _prev = () => {
     let currentStep = this.state.currentStep
+
     currentStep = currentStep <= 1 ? 1 : currentStep - 1
     this.setState({
       currentStep: currentStep,
@@ -210,6 +219,7 @@ class FormComponent extends Component {
 FormComponent.propTypes = {
   DIC: PropTypes.object,
   handleSubmit: PropTypes.func.isRequired,
+  validate: PropTypes.func,
 }
 
 export default connect(
