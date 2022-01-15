@@ -126,6 +126,7 @@ form .question span {
 form .question-long label {
   margin-top: -33px;
 }
+
 form .question-extra-long label {
   margin-top: -55px;
 }
@@ -178,4 +179,8 @@ input[type='number']:valid ~ label {
 
 form .react-tel-input {
   margin-left: 1rem;
+}
+
+form .question-number input {
+  max-width: 8rem;
 }

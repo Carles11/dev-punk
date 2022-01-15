@@ -44,10 +44,10 @@ class FormComponent extends Component {
   _next = () => {
     let currentStep = this.state.currentStep
 
-    const { validate } = this.props
+    const { errors } = this.props
 
-    console.log('ERERERER', validate)
-    if (!validate) {
+    console.log('ERERERER', errors)
+    if (!errors) {
       currentStep = currentStep >= 3 ? 4 : currentStep + 1
       this.setState({
         currentStep: currentStep,
@@ -149,6 +149,7 @@ class FormComponent extends Component {
 
   render() {
     const { DIC } = this.props
+
     const {
       currentStep,
       fullName,
@@ -160,6 +161,7 @@ class FormComponent extends Component {
       languages,
       technologies,
     } = this.state
+
     return (
       <div id="find-form" className="steps-form">
         <div className="form-header">
@@ -219,6 +221,7 @@ class FormComponent extends Component {
 FormComponent.propTypes = {
   DIC: PropTypes.object,
   handleSubmit: PropTypes.func.isRequired,
+  errors: PropTypes.bool,
   validate: PropTypes.func,
 }
 

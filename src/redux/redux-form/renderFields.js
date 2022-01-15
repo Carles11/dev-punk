@@ -17,7 +17,7 @@ export const renderField = ({
     </div>
   </div>
 )
-export const renderPhoneNumberField = ({
+export const renderNumberField = ({
   input,
   className,
   name,

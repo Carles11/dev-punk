@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types'
 import { Field } from 'redux-form'
 
-import { renderField } from '../../../redux/redux-form/renderFields'
+import {
+  renderField,
+  renderNumberField,
+} from '../../../redux/redux-form/renderFields'
 import { number } from '../../../redux/redux-form/validations'
 
 const Step3 = (props) => {
@@ -17,8 +20,8 @@ const Step3 = (props) => {
         type="number"
         name="developers"
         label={DIC.FORM_DEVELOPERS}
-        className="question question-long"
-        component={renderField}
+        className="question question-number"
+        component={renderNumberField}
         placeholder={DIC.FORM_FORM_DEVELOPERS_PH}
         value={developers}
         onChange={handleChange}
