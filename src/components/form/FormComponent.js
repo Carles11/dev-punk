@@ -43,7 +43,7 @@ class FormComponent extends Component {
 
   _next = () => {
     let currentStep = this.state.currentStep
-
+    // TODO Check for errors in redux-form. Following check is not working
     const { errors } = this.props
 
     console.log('ERERERER', errors)

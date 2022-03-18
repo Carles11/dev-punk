@@ -14,7 +14,7 @@ const Step4 = (props) => {
       type="text"
       name="message"
       label={DIC.FORM_MESSAGE}
-      className="question"
+      className="question question-msg"
       component={renderField}
       placeholder={DIC.FORM_MESSAGE_PH}
       value={props.message}

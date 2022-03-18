@@ -184,3 +184,6 @@ form .react-tel-input {
 form .question-number input {
   max-width: 8rem;
 }
+form .question-msg input {
+  min-height: 8rem;
+}

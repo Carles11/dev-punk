@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 // import dummyPic from '../assets/imgs/team/dummy.webp'
@@ -6,6 +7,17 @@ import charliePic from '../assets/imgs/team/Carles.webp'
 import '../styles/components/About.css'
 
 const About = ({ DIC }) => {
+  const [apiResponse, setApiResponse] = useState(null)
+
+  const callAPI = () => {
+    fetch('http://localhost:9000/testAPI')
+      .then((res) => res.text())
+      .then((res) => setApiResponse(res))
+  }
+
+  useEffect(() => {
+    callAPI()
+  })
   const team = [
     {
       firstName: 'Carles',
@@ -34,6 +46,7 @@ const About = ({ DIC }) => {
         <p>{DIC.ABOUT_DESCRIPTION_A}</p>
         <p>{DIC.ABOUT_DESCRIPTION_B}</p>
       </div>
+      <h1>{apiResponse}</h1>
       <div className="cards-section">
         {team.map((member, i) => {
           return (
