@@ -9,7 +9,9 @@ app.use(cors())
 const port = process.env.PORT || 3001
 
 app.get('/', (req, res) => {
-  res.send({ responseMessage: 'React client connected tot he Express server' })
+  res.send({
+    responseMessage: 'React client not connected to the Express server',
+  })
 })
 
 app.listen(port, () => {

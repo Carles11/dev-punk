@@ -2,7 +2,6 @@ import emailjs, { init } from 'emailjs-com'
 import Swal from 'sweetalert2'
 
 const emailSend = ({ data }) => {
-  console.log('DADADAD', data)
   const serviceID = 'default_service'
   const templateID = process.env.REACT_APP_EMAIL_Template_ID
   const showName = data.from_name?.split(' ')[0]
