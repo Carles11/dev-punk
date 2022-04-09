@@ -18,7 +18,7 @@ const About = ({ DIC }) => {
       }
 
       const promiseData = response.data ? response.data : null
-      console.log('response.data------------->SUCCESS!', response.data, status)
+      console.log('response.data------------->SUCCESS!', status, response.data)
       setTeam(promiseData)
     })
   })
@@ -43,7 +43,7 @@ const About = ({ DIC }) => {
   //     linkedInUrl: '',
   //   },
   // ]
-  // console.log('team------------->', team)
+  console.log('team------------->', team)
 
   return (
     <div className="about-section">
