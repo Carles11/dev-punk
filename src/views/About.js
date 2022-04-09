@@ -60,7 +60,7 @@ const About = ({ DIC }) => {
             <div key={i} className="cards-team-member">
               <div className="cards-team-main-info">
                 <img
-                  src={member.photoLink}
+                  src={member.img}
                   alt="dev-punk team member profile picture"
                 />
                 <div className="cards-team-main-data">
@@ -68,9 +68,7 @@ const About = ({ DIC }) => {
                     {member.firstName} &nbsp;
                     {member.lastName}
                   </div>
-                  <div className="cards-team-main-position">
-                    {member.position}
-                  </div>
+                  <div className="cards-team-main-position">{member.role}</div>
                   <div className="cards-team-main-email">
                     <a href={`mailto:${member.email}`}>{member.email}</a>
                   </div>

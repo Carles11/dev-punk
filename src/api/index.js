@@ -12,7 +12,6 @@ const request = (verb, route, data, next) => {
       let o = null
       try {
         o = JSON.parse(xhr.responseText)
-        console.log('JSON.parse(xhr.responseText)------------->', o)
       } catch (e) {
         console.log('xhr.onreadystatechange-ERROR------------->', e)
         o = {
