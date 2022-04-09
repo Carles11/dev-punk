@@ -14,7 +14,6 @@ const request = (verb, route, data, next) => {
         o = JSON.parse(xhr.responseText)
         console.log('JSON.parse(xhr.responseText)------------->', o)
       } catch (e) {
-        console.log('xhr.status------------->', xhr.status)
         console.log('xhr.onreadystatechange-ERROR------------->', e)
         o = {
           error: `Interner Fehler (invalid JSON from ${verb.toUpperCase()} ${route})`,

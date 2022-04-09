@@ -11,18 +11,21 @@ const About = ({ DIC }) => {
   const [team, setTeam] = useState([])
 
   useEffect(() => {
-    API.get(`team`, (error, response, status) => {
+    getTeam()
+  }, [])
+
+  const getTeam = () => {
+    API.get(`team`, (error, response) => {
       if (error) {
         alert(error.message)
         return
       }
 
       const promiseData = response.data ? response.data : null
-      console.log('response.data------------->SUCCESS!', status, response.data)
+
       setTeam(promiseData)
     })
-  })
-
+  }
   // const teamH = [
   //   {
   //     firstName: 'Carles',
@@ -43,7 +46,6 @@ const About = ({ DIC }) => {
   //     linkedInUrl: '',
   //   },
   // ]
-  console.log('team------------->', team)
 
   return (
     <div className="about-section">
