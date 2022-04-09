@@ -34,7 +34,7 @@ const dictionary = {
     FORM_STEP: 'Paso',
     FORM_TECHNOLOGIES: '¿Con qué framework deberá trabajar?',
     FORM_TECHNOLOGIES_PH: 'Tecnologías',
-    FORM_TITLE: 'Necesitas programador? Recibe tu presupuesto en 24h.',
+    FORM_TITLE: 'Recibe tu presupuesto en 24h.',
     HEADER_MAIN: 'devPunk Developers',
     HEADER_TITLE: 'Dev-Punk Developers',
     HEADER_COPYRIGHTS: 'Foto de Anna Tarazevich en Pexels',
