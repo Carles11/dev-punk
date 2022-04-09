@@ -38,6 +38,8 @@ const dictionary = {
     HEADER_MAIN: 'devPunk Developers',
     HEADER_TITLE: 'Dev-Punk Developers',
     HEADER_COPYRIGHTS: 'Foto de Anna Tarazevich en Pexels',
+    INFOSEC: 'Así de sencillo',
+    INFOSEC_TXT: 'En devPunk tenemos al que buscas.',
     MSG_SEND_ERROR:
       'Lamentablemente no se pudo enviar el formulario, inténtelo más tarde.',
     MORE_INFO: 'Más información',

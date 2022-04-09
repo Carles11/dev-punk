@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import emailSend from '../utils/email'
 import Header from '../components/Header'
+import InfoSection from '../components/InfoSection'
 import FormComponent from '../components/form/FormComponent'
 
 const Home = ({ DIC }) => {
@@ -22,7 +23,7 @@ const Home = ({ DIC }) => {
         ]}
       />
       <Header DIC={DIC} />
-
+      <InfoSection DIC={DIC} />
       <FormComponent DIC={DIC} handleSubmit={handleSubmit} />
     </>
   )
