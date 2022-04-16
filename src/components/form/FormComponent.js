@@ -37,6 +37,7 @@ class FormComponent extends Component {
         [name]: value,
       })
     } else {
+      // we use react-phone-input-2 for phone, which is the only field without evente.target defined
       this.setState({ phone: event })
     }
   }
