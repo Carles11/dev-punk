@@ -11,9 +11,7 @@ const Button = (props) => {
       <span />
     </span>
   )
-  console.log('---------->CSS', css)
-  console.log('---------->label', label)
-  console.log('---------->external', external)
+  
   switch (external) {
     case false:
       return (
