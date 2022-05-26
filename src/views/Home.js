@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import emailSend from '../utils/email'
+
 import Header from '../components/Header'
-import InfoSection from '../components/InfoSection'
+import InfoSection from '../components/infoSection'
 import FormComponent from '../components/form/FormComponent'
 
 const Home = ({ DIC }) => {

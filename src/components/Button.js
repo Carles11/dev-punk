@@ -11,7 +11,9 @@ const Button = (props) => {
       <span />
     </span>
   )
-
+  console.log('---------->CSS', css)
+  console.log('---------->label', label)
+  console.log('---------->external', external)
   switch (external) {
     case false:
       return (
@@ -39,7 +41,7 @@ const Button = (props) => {
           onClick={fn}
           type={type}
           aria-label={label}
-          className={`btn ${css}`}
+          className={`btn hide ${css}`}
           disabled={disabled}
         >
           {label}

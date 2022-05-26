@@ -40,6 +40,7 @@ const dictionary = {
     HEADER_COPYRIGHTS: 'Foto de Anna Tarazevich en Pexels',
     INFOSEC: 'Así de sencillo',
     INFOSEC_TXT: 'En devPunk tenemos al programador que buscas.',
+    MAIN_TITLE: 'Programadores para tus proyectos',
     MSG_SEND_ERROR:
       'Lamentablemente no se pudo enviar el formulario, inténtelo más tarde.',
     MORE_INFO: 'Más información',

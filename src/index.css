@@ -4,18 +4,32 @@ html {
 
 body {
   background-color: var(--bgColorLight);
-  font-family: 'Cantarell', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  font-size: 2rem;
-  text-transform: uppercase;
+  font-family: 'DM Serif Display', serif;
   text-align: center;
   letter-spacing: 2px;
+  font-weight: 300;
+
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 22px;
+  }
 }
 h2 {
+  font-family: 'Roboto', sans-serif;
+
   font-size: 3rem;
   text-transform: capitalize;
   text-align: center;

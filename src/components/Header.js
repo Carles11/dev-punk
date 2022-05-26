@@ -32,6 +32,7 @@ const Header = (props) => {
         css={'app-header-bg'}
         url={bg}
         label={`${DIC && DIC.HEADER_MAIN}, ${DIC && DIC.DESCRIPTION}`}
+        DIC={DIC}
       />
     </header>
   )
