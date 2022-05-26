@@ -12,7 +12,12 @@ const StepsSection = () => {
         return (
           <div key={`key_${step.title}`} className="step-box">
             <h1>{step.title}</h1>
-            <img src={`${step.iconSrc}`} alt={step.iconAlt} />
+            <img
+              src={step.iconSrc}
+              alt={step.iconAlt}
+              width="100px"
+              height="100px"
+            />
 
             <h3>{step.description}</h3>
           </div>

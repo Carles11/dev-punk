@@ -11,7 +11,7 @@ const Button = (props) => {
       <span />
     </span>
   )
-  
+
   switch (external) {
     case false:
       return (

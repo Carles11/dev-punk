@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
+  justify-content: center;
 }
 @media screen and (min-width: 678px) {
   .step-frame {
@@ -29,17 +30,8 @@
   }
 }
 
-.step-box::after {
-  content: '';
-  position: absolute;
-  bottom: -30px;
-  background: grey;
-  width: 90%;
-  height: 4px;
-  left: 3%;
-  border-radius: 50%;
-  filter: blur(3px);
-  margin-bottom: 4rem;
+.step-box:hover {
+  transform: scale(1.1);
 }
 
 .step-box h1 {
@@ -50,4 +42,7 @@
   border-radius: 50%;
   color: white;
   margin-bottom: 3rem;
+}
+.step-box img {
+  margin: 2rem auto;
 }
